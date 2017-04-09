@@ -59,9 +59,6 @@ footer .footer-title {
 }
 /* mobile */
 @media (max-width: 641px){
-	body {
-		margin-top: 95px;
-	}
 	header .header-logo img {
 		height: 45px;
 	}
