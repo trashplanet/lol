@@ -44,6 +44,19 @@ section#hero .hero-inner {
 	color: #fff;
 	font-size: 1.382rem;
 }
+section#hero img {
+	height: 45px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 12px;
+}
+section#hero a {
+	color:#fff;
+	font-size: 1.382rem;
+}
+section#hero a:hover {
+	text-decoration: underline;
+}
 /* footer */
 footer {
 	text-align: left;
