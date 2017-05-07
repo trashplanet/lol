@@ -44,7 +44,12 @@ section#hero .hero-inner {
 	color: #fff;
 	font-size: 1.382rem;
 }
-section#hero img {
+section#hero .egg img {
+	height: 188px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+section#hero .social img {
 	height: 45px;
     margin-top: 4px;
     margin-bottom: 4px;
