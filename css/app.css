@@ -2,29 +2,24 @@ body {
 	font-family:'Helvetica', sans-serif;
 	overflow-x: hidden;
 }
+a {
+	cursor: pointer;
+}
+.button {
+	border: 1px solid #fefefe;
+	color: #fefefe;
+	font-size: 1rem;
+	margin: 1rem .618rem;
+}
 /* header */
 header {
-	padding: 1rem 0;
-	box-shadow: 0 5px 13px rgba(0,0,0,.15);
-	width: 100%;
 	position: fixed;
-	top: 0;
-	left: 0;
-	transition: opacity .5s ease-out;.
-	z-index: 999;
-	color: #fff;
+	width: 100%;
+	margin: 1rem 0rem;
 }
-.header-logo {
-	display: inline-block;
-}
-.header-logo img {
-	height: 60px;
-}
-.header-title {
-	font-size: 1.382rem;
-	display: inline-block;
-	line-height: 60px;
-	padding-left: 1rem;
+header img {
+	height: 35px;
+    margin-right: .618rem;
 }
 /* hero */
 section#hero {
@@ -32,65 +27,18 @@ section#hero {
 	height: 100vh;
 	display: table;
 	width: 100%;
+	color: #fefefe;
 }
 section#hero .hero-inner {
 	display: table-cell;
 	vertical-align: middle;
 }
-.hero-title {
-	color: #fff;
-}
-.hero-tagline {
-	color: #fff;
-	font-size: 1.382rem;
-}
 section#hero .egg img {
 	height: 188px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-section#hero .social img {
-	height: 45px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    margin-right: 12px;
-}
-section#hero a {
-	color:#fff;
-	font-size: 1.382rem;
-}
-section#hero a:hover {
-	text-decoration: underline;
-}
-/* footer */
-footer {
-	text-align: left;
-	box-shadow:	0 -3px 7px rgba(0,0,0,.15);
-	display: inline-block;
-	line-height: 45px;
-	padding-left: 1rem;
-	width: 100%;
-}
-footer .footer-title {
-	color: #fff;
-	line-height: 45px;
 }
 /* mobile */
 @media (max-width: 641px){
-	header .header-logo img {
-		height: 45px;
-	}
-	header .button {
-		margin: 0;
-		width: calc(50% - .618rem);
-	}
 	section#hero .hero-title {
 		font-size: 2rem;
-	}
-	section#hero .hero-tagline {
-		font-size: 1.2rem;
-	}
-	section .section-title {
-		font-size: 1.382rem;
 	}
 }
