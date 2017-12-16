@@ -23,7 +23,7 @@ header img {
 }
 /* hero */
 section#hero {
-	background-image:linear-gradient(61.8deg, #E91E63, #C2185B);
+	background-image:linear-gradient(61.8deg, #E91E63, #b0003a);
 	height: 100vh;
 	display: table;
 	width: 100%;
