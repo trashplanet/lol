@@ -68,7 +68,7 @@ section#hero .egg img {
 	margin-top: 2rem;
 }
 /*services*/
-section#services img {
+section#services .services-text img {
 	max-width: 100px;
 	margin: 1rem;
 }
