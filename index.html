@@ -171,6 +171,23 @@
 			</div>
 		</section>
 		<!--scripts-->
+		<script type="jquery">
+		$(document).ready(function() {
+
+			$("a.button").each(function() {
+				var href = $(this).attr("href");
+				var target = $(this).attr("target");
+				var text = $(this).text();
+				$(this).click(function(event) { // when someone clicks these links
+					event.preventDefault(); // don't open the link yet
+					setTimeout(function() { // now wait 300 milliseconds...
+						window.open(href,(!target?"_self":target)); // ...and open the link as usual
+					},300);
+				});
+			});
+
+		});
+		</script>
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/vendor/what-input.js"></script>
 		<script src="js/vendor/foundation.js"></script>
