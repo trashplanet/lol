@@ -6,7 +6,8 @@ a {
 	cursor: pointer;
 }
 h1 {
-	font-weight: 300;
+	font-weight: 400;
+	font-size: 2.618rem;
 }
 h2 {
 	font-size: 1.8rem;
@@ -23,6 +24,9 @@ h3 {
 	font-size: 1rem;
 	margin: 1rem .618rem;
 	margin-left: 1rem;
+}
+h2, h3, h4, h5, h6, p, span {
+	font-weight: 300;
 }
 /*sections*/
 section.section {
@@ -61,11 +65,14 @@ section#header .button {
 section#hero {
 	background-image:linear-gradient(61.8deg, #E91E63, #b0003a);
 	color: #fefefe;
-	padding-top: 77px;
+/*	padding-top: 77px;*/
 }
 section#hero .egg img {
 	height: 188px;
 	margin-top: 2rem;
+}
+.hero-tagline {
+	font-size: 1.618rem;
 }
 /*services*/
 section#services .services-text img {
@@ -84,6 +91,14 @@ section#homepage-footer {
 	padding: 1rem;
 	color: #fefefe;
 	background-color: #E91E63;
+}
+/*add me on social section*/
+section#social div.social-icons {
+	margin-top: 1rem;
+}
+section#social img {
+	height: 65px;
+    margin: 0rem .382rem;
 }
 /* mobile */
 @media (max-width: 1024px){
