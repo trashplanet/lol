@@ -18,7 +18,13 @@ h3 {
 	font-size: 1.469rem;
 	margin-top: 1.618rem;
 }
-.button {
+.links h2{
+	margin: 0rem 0 1rem;
+}
+.links h2:not(:first-child) {
+	margin: 1.618rem 0 1rem;
+}
+a.button {
 	border: 1px solid #fefefe;
 	color: #fefefe;
 	font-size: 1rem;
@@ -74,6 +80,10 @@ section#hero .egg img {
 .hero-tagline {
 	font-size: 1.618rem;
 }
+/* hero - links page */
+section.hero-links{
+	/*padding-top: 77px;*/
+}
 /*services*/
 section#services .services-text img {
 	max-width: 100px;
@@ -83,9 +93,9 @@ section#services .services-text {
 	font-weight: 300;
 }
 /*certifications*/
-section#certifications .certification-badges {
+/*section#certifications .certification-badges {
 	padding: 1rem 0;
-}
+}*/
 /*footer*/
 section#homepage-footer {
 	padding: 1rem;
