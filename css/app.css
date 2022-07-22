@@ -71,6 +71,7 @@ section#header .button {
 .header-name {
 	color: #fefefe;
 	text-transform: uppercase;
+	padding-top: 0.25rem;
 }
 /* hero */
 section#hero {
