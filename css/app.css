@@ -67,11 +67,16 @@ section#header img {
 section#header .button {
 	margin: 0 0 0 1rem;
 }
+
+.header-name {
+	color: #fefefe;
+	text-transform: uppercase;
+}
 /* hero */
 section#hero {
 	background-image:linear-gradient(61.8deg, #E91E63, #b0003a);
 	color: #fefefe;
-/*	padding-top: 77px;*/
+	padding-top: 77px;
 }
 section#hero .egg img {
 	height: 188px;
