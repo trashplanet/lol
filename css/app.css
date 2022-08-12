@@ -73,6 +73,11 @@ section#header .button {
 	text-transform: uppercase;
 	padding-top: 0.25rem;
 }
+.header-name:hover {
+/*	font-weight: 400;*/
+	color: #fff64f;
+}
+
 /* hero */
 section#hero {
 	background-image:linear-gradient(61.8deg, #E91E63, #b0003a);
