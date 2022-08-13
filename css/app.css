@@ -110,16 +110,15 @@ section#services .services-text {
 
 /*featured publications*/
 .featured-publications {
-    background-color: #c79400;
+	background-color: #fefefe;
     padding: 2.618rem;
-    color: #fefefe;
     margin: 1.618rem 0 0;
+    border: 2px solid #c79400;
 }
-.featured-publications a {
-    color: #fefefe;
-}
-.featured-publications:hover {
-    background-color: #b48601;
+.featured-publications:hover {/*
+	background-color: #b48601;*/
+	background-color: #c79400;
+	color: #fefefe;
 }
 .outlet {
 	text-transform: uppercase;
