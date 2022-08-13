@@ -107,6 +107,26 @@ section#services .services-text {
 /*section#certifications .certification-badges {
 	padding: 1rem 0;
 }*/
+
+/*featured publications*/
+.featured-publications {
+    background-color: #c79400;
+    padding: 2.618rem;
+    color: #fefefe;
+    margin: 1.618rem 0 0;
+}
+.featured-publications a {
+    color: #fefefe;
+}
+.featured-publications:hover {
+    background-color: #b48601;
+}
+.outlet {
+	text-transform: uppercase;
+}
+.article-title {
+	font-weight: 500;
+}
 /*footer*/
 section#homepage-footer {
 	padding: 1rem;
