@@ -1,0 +1,102 @@
+/* =========================================================
+   site.css — global design tokens, base, header & footer
+   Shared across the whole site (blog now, homepage later).
+   Keep classes minimal; prefer element selectors.
+   ========================================================= */
+
+:root {
+	/* ink & paper */
+	--ink: #17141a;
+	--ink-soft: #574f5c;
+	--paper: #fffdf9;
+	--paper-2: #f7f0e8;
+
+	/* brand */
+	--crimson: #af0039;
+	--crimson-deep: #7d0029;
+	--magenta: #e91e63;
+	--gold: #c79400;
+	--gold-bright: #fff64f;
+
+	--line: rgba(23, 20, 26, .12);
+	--grad: linear-gradient(118deg, #e91e63 0%, #af0039 62%, #7d0029 100%);
+
+	--wrap: 68rem;      /* general max width */
+	--measure: 44rem;   /* readable text column */
+	--header-h: 72px;
+
+	--font-display: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+	margin: 0;
+	font-family: var(--font-body);
+	font-weight: 300;
+	color: var(--ink);
+	background: var(--paper);
+	line-height: 1.65;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--crimson); text-underline-offset: .18em; }
+a:hover { color: var(--magenta); }
+
+/* ---------- global header ---------- */
+site-header { display: block; }
+
+.site-head {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	background: var(--crimson);
+	box-shadow: 0 5px 13px rgba(0, 0, 0, .15);
+}
+.site-head .bar {
+	max-width: var(--wrap);
+	margin: 0 auto;
+	min-height: var(--header-h);
+	padding: .75rem 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+.site-head a { color: #fff; text-decoration: none; }
+.site-head .brand {
+	font-family: var(--font-display);
+	font-weight: 700;
+	letter-spacing: .04em;
+	text-transform: uppercase;
+	font-size: 1.05rem;
+}
+.site-head .brand:hover { color: var(--gold-bright); }
+.site-head nav { display: flex; align-items: center; gap: 1.4rem; }
+.site-head nav a { font-weight: 400; }
+.site-head nav a:hover { color: var(--gold-bright); }
+.site-head nav img { height: 26px; width: auto; display: inline-block; }
+
+/* ---------- global footer ---------- */
+site-footer { display: block; }
+
+.site-foot {
+	background: var(--magenta);
+	color: #fff;
+	text-align: center;
+	padding: 2.5rem 1.5rem;
+}
+.site-foot .social { margin-bottom: 1rem; display: flex; justify-content: center; gap: .75rem; }
+.site-foot .social img { height: 52px; width: auto; }
+.site-foot small { font-weight: 300; opacity: .92; }
+
+@media (max-width: 640px) {
+	.site-head .bar { padding: .75rem 1.1rem; }
+	.site-head nav { gap: 1rem; }
+}

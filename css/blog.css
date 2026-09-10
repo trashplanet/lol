@@ -1,0 +1,199 @@
+/* =========================================================
+   blog.css — blog archive + article pages.
+   Bolder than the homepage: big display type, high contrast,
+   generous whitespace. Same crimson/magenta/gold family.
+   ========================================================= */
+
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 1.5rem; }
+
+/* ---------- hero (shared by archive + posts) ---------- */
+.hero {
+	background: var(--grad);
+	color: #fff;
+	padding: clamp(3.5rem, 9vw, 7rem) 1.5rem clamp(3rem, 7vw, 5.5rem);
+}
+.hero > .wrap { padding: 0 1.5rem; }
+.hero .eyebrow {
+	font-family: var(--font-display);
+	text-transform: uppercase;
+	letter-spacing: .28em;
+	font-size: .8rem;
+	font-weight: 500;
+	opacity: .85;
+	margin: 0 0 1rem;
+}
+.hero h1 {
+	font-family: var(--font-display);
+	font-weight: 700;
+	line-height: 1.02;
+	letter-spacing: -.015em;
+	font-size: clamp(2.4rem, 6.5vw, 4.6rem);
+	margin: 0;
+	max-width: 20ch;
+}
+.hero p { font-size: 1.2rem; max-width: 46ch; margin: 1.4rem 0 0; opacity: .95; }
+
+/* ---------- archive grid ---------- */
+main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
+
+.post-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	gap: 1.5rem;
+}
+.post-card {
+	display: flex;
+	flex-direction: column;
+	background: var(--paper);
+	border: 1px solid var(--line);
+	text-decoration: none;
+	color: var(--ink);
+	transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.post-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 18px 40px rgba(175, 0, 57, .16);
+	border-color: var(--gold);
+}
+.post-card figure { margin: 0; aspect-ratio: 16 / 9; overflow: hidden; background: var(--paper-2); }
+.post-card figure img { width: 100%; height: 100%; object-fit: cover; }
+.post-card .body { padding: 1.5rem 1.5rem 1.75rem; display: flex; flex-direction: column; gap: .6rem; }
+.post-card h2 {
+	font-family: var(--font-display);
+	font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 1.15;
+	letter-spacing: -.01em;
+	margin: 0;
+}
+.post-card:hover h2 { color: var(--crimson); }
+.post-card p { margin: 0; color: var(--ink-soft); font-size: 1rem; }
+.post-card .post-meta { margin-top: .4rem; }
+
+/* meta line (date · read time) */
+.post-meta {
+	font-family: var(--font-display);
+	text-transform: uppercase;
+	letter-spacing: .12em;
+	font-size: .72rem;
+	font-weight: 500;
+	color: var(--ink-soft);
+}
+.post-meta span { color: var(--crimson); }
+
+/* ---------- article ---------- */
+.post { max-width: var(--measure); margin: 0 auto; padding: clamp(2.5rem, 6vw, 4rem) 1.5rem 2rem; }
+.post > * { grid-column: 2; }
+
+.post p, .post li { font-size: 1.12rem; }
+.post p { margin: 1.3rem 0; }
+
+.post h2 {
+	font-family: var(--font-display);
+	font-weight: 700;
+	font-size: clamp(1.7rem, 3.5vw, 2.3rem);
+	line-height: 1.12;
+	letter-spacing: -.01em;
+	margin: 3rem 0 1rem;
+	padding-top: 1.4rem;
+	border-top: 3px solid var(--gold);
+}
+.post h3 {
+	font-family: var(--font-display);
+	font-weight: 500;
+	font-size: 1.3rem;
+	margin: 2.2rem 0 .6rem;
+}
+
+.post ol, .post ul { margin: 1.3rem 0; padding-left: 1.3rem; }
+.post li { margin: .5rem 0; }
+.post li::marker { color: var(--crimson); font-weight: 700; }
+
+.post a { font-weight: 400; }
+
+.post blockquote {
+	margin: 2rem 0;
+	padding: .4rem 0 .4rem 1.6rem;
+	border-left: 4px solid var(--magenta);
+	font-size: 1.25rem;
+	font-style: italic;
+	color: var(--ink);
+}
+
+.post figure { margin: 2.4rem 0; }
+.post figure img { width: 100%; border: 1px solid var(--line); }
+.post figcaption {
+	margin-top: .7rem;
+	font-size: .92rem;
+	color: var(--ink-soft);
+	font-style: italic;
+}
+
+/* table of contents */
+.toc {
+	background: var(--paper-2);
+	border: 1px solid var(--line);
+	padding: 1.5rem 1.75rem;
+	margin: 2.5rem 0;
+}
+.toc strong {
+	font-family: var(--font-display);
+	text-transform: uppercase;
+	letter-spacing: .16em;
+	font-size: .78rem;
+	color: var(--ink-soft);
+	display: block;
+	margin-bottom: .75rem;
+}
+.toc ol { margin: 0; padding-left: 1.2rem; }
+.toc li { font-size: 1rem; margin: .35rem 0; }
+
+/* tags */
+.tag-row { display: flex; flex-wrap: wrap; gap: .5rem; margin: 2.5rem 0 0; }
+.tag {
+	font-family: var(--font-display);
+	font-size: .74rem;
+	font-weight: 500;
+	letter-spacing: .08em;
+	text-transform: uppercase;
+	padding: .35rem .7rem;
+	border: 1px solid var(--line);
+	color: var(--ink-soft);
+	background: var(--paper-2);
+}
+
+/* lead paragraph after the hero */
+.post .lead { font-size: 1.28rem; color: var(--ink); }
+
+/* back link + post navigation */
+.post .back {
+	font-family: var(--font-display);
+	text-transform: uppercase;
+	letter-spacing: .14em;
+	font-size: .76rem;
+	font-weight: 500;
+	text-decoration: none;
+	display: inline-block;
+	margin-bottom: 1.5rem;
+}
+.postnav {
+	max-width: var(--measure);
+	margin: 1rem auto 0;
+	padding: 2rem 1.5rem 3rem;
+	border-top: 1px solid var(--line);
+}
+.postnav a {
+	font-family: var(--font-display);
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 1.1rem;
+}
+.postnav small {
+	display: block;
+	font-family: var(--font-display);
+	text-transform: uppercase;
+	letter-spacing: .14em;
+	font-size: .72rem;
+	color: var(--ink-soft);
+	margin-bottom: .25rem;
+}
