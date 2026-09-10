@@ -25,7 +25,8 @@
 	--measure: 54rem;   /* readable article column */
 	--header-h: 77px;
 
-	--font-display: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* --font-display: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+	--font-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
