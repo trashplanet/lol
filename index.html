@@ -18,6 +18,8 @@
 		<meta name="twitter:description" content="Laura Ferruggia is an online marketing leader based in PA who is experienced with SEO, marketing automation, website development, analytics, and PPC.">
 		<link rel="stylesheet" href="css/foundation.css">
 		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="/css/site.css?v=20260910">
+		<script src="/js/site.js?v=20260910" defer></script>
 		<link rel="icon" href="/laurel-icon.ico" type="image/x-icon">
 		<meta class="foundation-mq">
 		<script type="application/ld+json">
@@ -57,19 +59,7 @@
 	</head>
 	<body>
 		<!--header-->
-		<section class="section" id="header">
-			<div class="inner">
-				<div class="row">
-					<div class="large-6 medium-6 small-7 columns text-left header-name">
-						<a href="https://www.laura.lol/"><span class="header-name">Laura Ferruggia</span></a>
-					</div>
-					<div class="large-6 medium-6 small-5 columns text-right">
-						<a href="https://x.com/lauregg" rel="me noopener" target="_blank" aria-label="Follow Laura Ferruggia on X"><img src="img/twitter-icon.png" alt=""></a>
-						<a href="https://www.linkedin.com/in/lauregg" rel="me noopener" target="_blank" aria-label="Connect with Laura Ferruggia on LinkedIn"><img src="img/linkedin-icon.png" alt=""></a>
-					</div>
-				</div>
-			</div>
-		</section> 
+		<site-header></site-header>
 		<!--hero-->
 		<section class="section" id="hero">
 			<div class="inner">
@@ -181,30 +171,8 @@
 				</div>
 			</div>
 		</section>
-		<!--follow on social-->
-		<section class="section" id="social">
-			<div class="inner">
-				<div class="row">
-					<div class="large-12 columns text-center">
-						<h2 class="section-title">Connect with me on social media.</h2>
-						<div class="social-icons">
-							<a href="https://x.com/lauregg" rel="me noopener" target="_blank" aria-label="Follow Laura Ferruggia on X"><img src="img/amber-twitter-icon.png" alt=""></a>
-							<a href="https://www.linkedin.com/in/lauregg" rel="me noopener" target="_blank" aria-label="Connect with Laura Ferruggia on LinkedIn"><img src="img/amber-linkedin-icon.png" alt=""></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 		<!--footer-->
-		<section class="section" id="homepage-footer">
-			<div class="inner">
-				<div class="row">
-					<div class="large-12 columns text-center">
-						<span>&copy; <script>document.write( new Date().getFullYear() );</script> Laura Ferruggia</span>
-					</div>
-				</div>
-			</div>
-		</section>
+		<site-footer></site-footer>
 		<!--scripts-->
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/vendor/what-input.js"></script>

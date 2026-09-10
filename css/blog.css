@@ -4,6 +4,21 @@
    generous whitespace. Same crimson/magenta/gold family.
    ========================================================= */
 
+/* base typography — blog pages only (Foundation pages keep app.css) */
+body {
+	margin: 0;
+	font-family: var(--font-body);
+	font-weight: 300;
+	color: var(--ink);
+	background: var(--paper);
+	line-height: 1.65;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--crimson); text-underline-offset: .18em; }
+a:hover { color: var(--magenta); }
+
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 1.5rem; }
 
 /* ---------- hero (shared by archive + posts) ---------- */

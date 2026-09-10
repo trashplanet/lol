@@ -30,25 +30,13 @@
 	--font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* box-sizing is global and harmless on Foundation pages (they already
+   use border-box). Base typography lives in the page stylesheets
+   (blog.css) so this file can be dropped onto the Foundation pages
+   (home, links) purely for the shared header/footer, without touching
+   their base styles. */
 *, *::before, *::after { box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
-
-body {
-	margin: 0;
-	font-family: var(--font-body);
-	font-weight: 300;
-	color: var(--ink);
-	background: var(--paper);
-	line-height: 1.65;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
-}
-
-img { max-width: 100%; height: auto; display: block; }
-
-a { color: var(--crimson); text-underline-offset: .18em; }
-a:hover { color: var(--magenta); }
 
 /* ---------- global header ---------- */
 site-header { display: block; height: var(--header-h); }

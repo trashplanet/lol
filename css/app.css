@@ -51,38 +51,14 @@ section.section .lead-in-text {
 .pink-background {
 	background-color: #fce4ec;
 }
-/* header */
-section#header {
-	position: fixed;
-    background-color: #af0039;
-    width: 100%;
-    padding: 1rem;
-    height: 77px;
-    box-shadow: 0 5px 13px rgba(0,0,0,.15);
-}
-section#header img {
-	height: 35px;
-    margin-right: .618rem;
-}
-section#header .button {
-	margin: 0 0 0 1rem;
-}
-
-.header-name {
-	color: #fefefe;
-	text-transform: uppercase;
-	padding-top: 0.25rem;
-}
-.header-name:hover {
-/*	font-weight: 400;*/
-	color: #fff64f;
-}
+/* header & footer are shared template parts — see css/site.css and js/site.js.
+   The <site-header> element reserves its own 77px of height, so the hero
+   below it no longer needs a padding-top offset to clear the fixed bar. */
 
 /* hero */
 section#hero {
 	background-image:linear-gradient(61.8deg, #E91E63, #b0003a);
 	color: #fefefe;
-	padding-top: 77px;
 }
 section#hero .egg img {
 	height: 188px;
