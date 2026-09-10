@@ -51,7 +51,7 @@ main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
 	transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
 .post-card:hover {
-	transform: translateY(-4px);
+	/* transform: translateY(-4px); */
 	box-shadow: 0 18px 40px rgba(175, 0, 57, .16);
 	border-color: var(--gold);
 }
