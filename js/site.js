@@ -27,12 +27,15 @@ class SiteFooter extends HTMLElement {
 		this.innerHTML = `
 		<footer class="site-foot">
 			<div class="social">
-				<a href="https://x.com/lauregg" rel="me noopener" target="_blank" aria-label="Follow Laura Ferruggia on X">
-					<img src="/img/amber-twitter-icon.png" alt=""></a>
-				<a href="https://www.linkedin.com/in/lauregg" rel="me noopener" target="_blank" aria-label="Connect with Laura Ferruggia on LinkedIn">
-					<img src="/img/amber-linkedin-icon.png" alt=""></a>
+				<h2>Connect with me on social media.</h2>
+				<div class="social-icons">
+					<a href="https://x.com/lauregg" rel="me noopener" target="_blank" aria-label="Follow Laura Ferruggia on X">
+						<img src="/img/amber-twitter-icon.png" alt=""></a>
+					<a href="https://www.linkedin.com/in/lauregg" rel="me noopener" target="_blank" aria-label="Connect with Laura Ferruggia on LinkedIn">
+						<img src="/img/amber-linkedin-icon.png" alt=""></a>
+				</div>
 			</div>
-			<small>&copy; ${year} Laura Ferruggia</small>
+			<div class="copyright"><small>&copy; ${year} Laura Ferruggia</small></div>
 		</footer>`;
 	}
 }

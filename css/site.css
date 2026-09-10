@@ -22,8 +22,8 @@
 	--grad: linear-gradient(118deg, #e91e63 0%, #af0039 62%, #7d0029 100%);
 
 	--wrap: 68rem;      /* general max width */
-	--measure: 44rem;   /* readable text column */
-	--header-h: 72px;
+	--measure: 54rem;   /* readable article column */
+	--header-h: 77px;
 
 	--font-display: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -50,53 +50,67 @@ a { color: var(--crimson); text-underline-offset: .18em; }
 a:hover { color: var(--magenta); }
 
 /* ---------- global header ---------- */
-site-header { display: block; }
+site-header { display: block; height: var(--header-h); }
 
 .site-head {
-	position: sticky;
+	position: fixed;
 	top: 0;
 	z-index: 50;
+	width: 100%;
+	height: var(--header-h);
+	padding: 1rem;
 	background: var(--crimson);
 	box-shadow: 0 5px 13px rgba(0, 0, 0, .15);
+	line-height: 1.5;
 }
 .site-head .bar {
-	max-width: var(--wrap);
+	max-width: 62.5rem;
 	margin: 0 auto;
-	min-height: var(--header-h);
-	padding: .75rem 1.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 1rem;
 }
 .site-head a { color: #fff; text-decoration: none; }
 .site-head .brand {
-	font-family: var(--font-display);
-	font-weight: 700;
-	letter-spacing: .04em;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 300;
 	text-transform: uppercase;
-	font-size: 1.05rem;
+	font-size: 1rem;
+	padding-top: .25rem;
 }
 .site-head .brand:hover { color: var(--gold-bright); }
-.site-head nav { display: flex; align-items: center; gap: 1.4rem; }
-.site-head nav a { font-weight: 400; }
+.site-head nav { display: flex; align-items: center; }
 .site-head nav a:hover { color: var(--gold-bright); }
-.site-head nav img { height: 26px; width: auto; display: inline-block; }
+.site-head nav img { height: 35px; width: auto; margin-right: .618rem; }
 
 /* ---------- global footer ---------- */
 site-footer { display: block; }
 
 .site-foot {
-	background: var(--magenta);
-	color: #fff;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.5;
 	text-align: center;
-	padding: 2.5rem 1.5rem;
 }
-.site-foot .social { margin-bottom: 1rem; display: flex; justify-content: center; gap: .75rem; }
-.site-foot .social img { height: 52px; width: auto; }
-.site-foot small { font-weight: 300; opacity: .92; }
+.site-foot .social {
+	position: relative;
+	z-index: 1;
+	padding: 2rem;
+	background: #fff;
+	box-shadow: 0 5px 13px rgba(0, 0, 0, .15);
+}
+.site-foot h2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.8rem;
+	font-weight: 300;
+	line-height: 1.4;
+	color: #0a0a0a;
+	margin: 0;
+}
+.site-foot .social-icons { margin-top: 1rem; display: flex; justify-content: center; }
+.site-foot .social-icons img { height: 65px; width: auto; margin: 0 .382rem; }
+.site-foot .copyright { padding: 1rem; color: #fff; background: var(--magenta); }
+.site-foot .copyright small { font-size: 1rem; font-weight: 300; }
 
 @media (max-width: 640px) {
-	.site-head .bar { padding: .75rem 1.1rem; }
-	.site-head nav { gap: 1rem; }
+	.site-foot h2 { font-size: 1.5rem; }
 }

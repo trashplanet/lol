@@ -69,6 +69,14 @@ main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
 .post-card:hover h2 { color: var(--crimson); }
 .post-card p { margin: 0; color: var(--ink-soft); font-size: 1rem; }
 .post-card .post-meta { margin-top: .4rem; }
+.post-card .series {
+	font-family: var(--font-display);
+	font-size: .78rem;
+	font-weight: 500;
+	letter-spacing: .14em;
+	text-transform: uppercase;
+	color: var(--gold);
+}
 
 /* meta line (date · read time) */
 .post-meta {
@@ -79,7 +87,7 @@ main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
 	font-weight: 500;
 	color: var(--ink-soft);
 }
-.post-meta span { color: var(--crimson); }
+.post-meta span, .post-meta time { color: var(--crimson); }
 
 /* ---------- article ---------- */
 .post { max-width: var(--measure); margin: 0 auto; padding: clamp(2.5rem, 6vw, 4rem) 1.5rem 2rem; }
@@ -128,6 +136,16 @@ main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
 	color: var(--ink-soft);
 	font-style: italic;
 }
+
+.post table {
+	width: 100%;
+	margin: 2rem 0;
+	border-collapse: collapse;
+	font-size: 1rem;
+}
+.post th, .post td { padding: .85rem 1rem; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+.post th { background: var(--paper-2); font-family: var(--font-display); }
+.post hr { margin: 3rem 0; border: 0; border-top: 1px solid var(--line); }
 
 /* table of contents */
 .toc {
