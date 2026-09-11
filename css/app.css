@@ -2,6 +2,10 @@ body {
 	font-family:'Helvetica', sans-serif;
 	overflow-x: hidden;
 	background: #fefefe;
+	/* sticky footer: fill the viewport and let <site-footer> sit at the bottom */
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 /* widen Foundation rows to the shared container width (see --wrap) */
 .row {
@@ -119,10 +123,31 @@ section#services .services-text span {
 .lead-in-text {
 	font-size: 1.25rem;
 }
+/* match the lead-in → button gap to the spacing above the lead-in text */
+.lead-in-text .button {
+	margin-top: 1.618rem;
+}
 /*certifications*/
 /*section#certifications .certification-badges {
 	padding: 1rem 0;
 }*/
+/* faint, oversized laurel watermark rising behind the publications section,
+   peeking up from just behind the footer's social panel */
+section#certifications { position: relative; overflow: hidden; }
+section#certifications .inner { position: relative; z-index: 1; }
+section#certifications::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -12%;
+	transform: translateX(-50%);
+	width: min(760px, 116%);
+	aspect-ratio: 1 / 1;
+	background: url('/img/yellow-laurel-wreath.svg') center / contain no-repeat;
+	opacity: .2;
+	pointer-events: none;
+	z-index: 0;
+}
 
 /*featured publications*/
 .featured-publications {
@@ -202,7 +227,7 @@ section#technologies h2 {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: var(--gold);
+	background: var(--gold-bright);
 	transition: background .2s ease;
 }
 .chip:hover .dot {

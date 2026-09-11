@@ -38,6 +38,10 @@
    their base styles. */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+/* brand colour behind everything, so rubber-band / overscroll at the top or
+   bottom shows crimson instead of a white gap (the body's #fefefe covers the
+   page itself). */
+html { background: var(--crimson); }
 
 /* ---------- global header ---------- */
 site-header { display: block; height: var(--header-h); }
@@ -68,19 +72,21 @@ site-header { display: block; height: var(--header-h); }
 	justify-content: space-between;
 }
 .site-head a { color: #fff; text-decoration: none; display: flex; align-items: center; }
+/* name + nav use the eyebrow treatment: larger, uppercase, wide tracking */
 .site-head .brand {
 	font-family: Helvetica, Arial, sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	text-transform: uppercase;
-	font-size: 1rem;
+	font-size: 1.15rem;
+	letter-spacing: .16em;
 }
 .site-head .brand:hover { color: var(--gold-bright); }
-.site-head nav { display: flex; align-items: center; gap: 1.5rem; }
+.site-head nav { display: flex; align-items: center; gap: 1.75rem; }
 .site-head .navlink {
 	text-transform: uppercase;
-	font-weight: 300;
-	font-size: .95rem;
-	letter-spacing: .06em;
+	font-weight: 500;
+	font-size: 1.05rem;
+	letter-spacing: .2em;
 	transition: color .2s ease;
 }
 .site-head .navlink:hover { color: var(--pink-soft); }
@@ -88,7 +94,7 @@ site-header { display: block; height: var(--header-h); }
 .site-head .icon:hover img { opacity: .82; }
 
 /* ---------- global footer ---------- */
-site-footer { display: block; }
+site-footer { display: block; margin-top: auto; }
 
 .site-foot {
 	font-family: Helvetica, Arial, sans-serif;

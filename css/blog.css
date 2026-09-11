@@ -14,6 +14,10 @@ body {
 	line-height: 1.65;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	/* sticky footer: fill the viewport and let <site-footer> sit at the bottom */
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--crimson); text-underline-offset: .18em; }
@@ -25,11 +29,27 @@ a:hover { color: var(--magenta); }
 
 /* ---------- hero (shared by archive + posts) ---------- */
 .hero {
+	position: relative;
+	overflow: hidden;
 	background: var(--grad);
 	color: #fff;
 	padding: clamp(3.5rem, 9vw, 7rem) 1.5rem clamp(3rem, 7vw, 5.5rem);
 }
-.hero > .wrap { padding: 0 0.9375rem; }
+.hero > .wrap { position: relative; z-index: 1; padding: 0 0.9375rem; }
+/* oversized laurel watermark bleeding off the right edge, behind the text */
+.hero::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -8%;
+	transform: translateY(-50%);
+	width: min(640px, 58%);
+	aspect-ratio: 1 / 1;
+	background: url('/img/yellow-laurel-wreath.svg') center / contain no-repeat;
+	opacity: .13;
+	pointer-events: none;
+	z-index: 0;
+}
 .hero .eyebrow {
 	font-family: var(--font-display);
 	text-transform: uppercase;
@@ -51,7 +71,22 @@ a:hover { color: var(--magenta); }
 .hero p { font-size: 1.2rem; max-width: 46ch; margin: 1.4rem 0 0; opacity: .95; }
 
 /* ---------- archive grid ---------- */
-main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
+main { position: relative; overflow: hidden; padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
+main > .wrap { position: relative; z-index: 1; }
+/* faint laurel watermark rising behind the bottom of the archive, before the footer */
+main::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -10%;
+	transform: translateX(-50%);
+	width: min(760px, 108%);
+	aspect-ratio: 1 / 1;
+	background: url('/img/yellow-laurel-wreath.svg') center / contain no-repeat;
+	opacity: .2;
+	pointer-events: none;
+	z-index: 0;
+}
 
 .post-grid {
 	display: grid;
