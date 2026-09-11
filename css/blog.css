@@ -73,13 +73,13 @@ a:hover { color: var(--magenta); }
 /* ---------- archive grid ---------- */
 main { position: relative; overflow: hidden; padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
 main > .wrap { position: relative; z-index: 1; }
-/* faint laurel watermark rising behind the bottom of the archive, before the footer */
+/* faint laurel watermark rising above the footer on archives and single posts */
 main::after {
 	content: "";
 	position: absolute;
 	left: auto;
 	right: -8%;
-	bottom: -10%;
+	bottom: -6.5rem;
 	transform: none;
 	width: min(760px, 90vw);
 	aspect-ratio: 1 / 1;
@@ -255,22 +255,6 @@ main::after {
 	padding: 2rem 1.5rem 3rem;
 	border-top: 1px solid var(--line);
 }
-/* laurel watermark before the footer on single posts (matches the archive) */
-.postnav::before {
-	content: "";
-	position: absolute;
-	/* bleed off the right edge of the viewport, like the blog hero.
-	   .postnav is a centred var(--measure)-wide box, so this calc pushes the
-	   wreath's right edge ~40px past the viewport regardless of screen width. */
-	right: calc(var(--measure) / 2 - 50vw - 40px);
-	bottom: -6.5rem;
-	width: min(620px, 80vw);
-	aspect-ratio: 1 / 1;
-	background: url('/img/yellow-laurel-wreath.svg') center / contain no-repeat;
-	opacity: .2;
-	pointer-events: none;
-	z-index: 0;
-}
 /* keep the article body and post-nav text above the watermark; the footer's
    opaque social panel (z-index:1) covers the watermark's lower half */
 .post { position: relative; z-index: 1; }
@@ -302,11 +286,6 @@ main::after {
 	main::after {
 		right: 50%;
 		width: min(620px, 135vw);
-		transform: translateX(50%);
-	}
-	.postnav::before {
-		right: 50%;
-		width: min(560px, 125vw);
 		transform: translateX(50%);
 	}
 }
