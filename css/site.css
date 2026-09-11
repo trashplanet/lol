@@ -37,7 +37,7 @@
    (home, links) purely for the shared header/footer, without touching
    their base styles. */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 /* Safari exposes this canvas during elastic overscroll. Pink matches the
    copyright footer exactly and is also part of the hero gradient. */
 html { background: var(--magenta); }
@@ -121,5 +121,16 @@ site-footer { display: block; margin-top: auto; background: var(--magenta); }
 .site-foot .copyright small { font-size: 1rem; font-weight: 300; }
 
 @media (max-width: 640px) {
+	.site-head { padding: 0 .5rem; }
+	.site-head .bar { padding: 0 .5rem; gap: .75rem; }
+	.site-head .brand {
+		min-width: 0;
+		white-space: nowrap;
+		font-size: .84rem;
+		letter-spacing: .1em;
+	}
+	.site-head nav { flex-shrink: 0; gap: .65rem; }
+	.site-head .navlink { font-size: .82rem; letter-spacing: .12em; }
+	.site-head .icon img { height: 28px; }
 	.site-foot h2 { font-size: 1.5rem; }
 }
