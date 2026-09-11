@@ -41,7 +41,7 @@ a:hover { color: var(--magenta); }
 	content: "";
 	position: absolute;
 	top: 50%;
-	right: -8%;
+	right: 10%;
 	transform: translateY(-50%);
 	width: min(640px, 58%);
 	aspect-ratio: 1 / 1;
@@ -248,11 +248,32 @@ main::after {
 	margin-bottom: 1.5rem;
 }
 .postnav {
+	position: relative;
 	max-width: var(--measure);
 	margin: 1rem auto 0;
 	padding: 2rem 1.5rem 3rem;
 	border-top: 1px solid var(--line);
 }
+/* laurel watermark before the footer on single posts (matches the archive) */
+.postnav::before {
+	content: "";
+	position: absolute;
+	/* bleed off the right edge of the viewport, like the blog hero.
+	   .postnav is a centred var(--measure)-wide box, so this calc pushes the
+	   wreath's right edge ~40px past the viewport regardless of screen width. */
+	right: calc(var(--measure) / 2 - 50vw - 40px);
+	bottom: -2.5rem;
+	width: min(620px, 80vw);
+	aspect-ratio: 1 / 1;
+	background: url('/img/yellow-laurel-wreath.svg') center / contain no-repeat;
+	opacity: .2;
+	pointer-events: none;
+	z-index: 0;
+}
+/* keep the article body and post-nav text above the watermark; the footer's
+   opaque social panel (z-index:1) covers the watermark's lower half */
+.post { position: relative; z-index: 1; }
+.postnav small, .postnav a { position: relative; z-index: 1; }
 .postnav a {
 	font-family: var(--font-display);
 	font-weight: 700;
