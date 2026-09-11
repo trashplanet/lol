@@ -109,6 +109,7 @@ section.hero-links{
 	/*padding-top: 77px;*/
 }
 /*services*/
+section#services { background: #fefefe; }
 section#services .services-text img {
 	max-width: 100px;
 	margin: 1rem;
@@ -133,7 +134,7 @@ section#services .services-text span {
 }*/
 /* faint, oversized laurel watermark rising behind the publications section,
    peeking up from just behind the footer's social panel */
-section#certifications { position: relative; overflow: hidden; }
+section#certifications { position: relative; overflow: hidden; background: #fefefe; }
 section#certifications .inner { position: relative; z-index: 1; }
 section#certifications::before {
 	content: "";
