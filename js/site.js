@@ -10,10 +10,11 @@ class SiteHeader extends HTMLElement {
 		<header class="site-head">
 			<div class="bar">
 				<a class="brand" href="https://www.laura.lol/">Laura Ferruggia</a>
-				<nav aria-label="Social media">
-					<a href="https://x.com/lauregg" rel="me noopener" target="_blank" aria-label="Follow Laura Ferruggia on X">
+				<nav aria-label="Primary">
+					<a class="navlink" href="/blog/">Blog</a>
+					<a class="icon" href="https://x.com/lauregg" rel="me noopener" target="_blank" aria-label="Follow Laura Ferruggia on X">
 						<img src="/img/twitter-icon.png" alt=""></a>
-					<a href="https://www.linkedin.com/in/lauregg" rel="me noopener" target="_blank" aria-label="Connect with Laura Ferruggia on LinkedIn">
+					<a class="icon" href="https://www.linkedin.com/in/lauregg" rel="me noopener" target="_blank" aria-label="Connect with Laura Ferruggia on LinkedIn">
 						<img src="/img/linkedin-icon.png" alt=""></a>
 				</nav>
 			</div>

@@ -19,7 +19,9 @@ img { max-width: 100%; height: auto; display: block; }
 a { color: var(--crimson); text-underline-offset: .18em; }
 a:hover { color: var(--magenta); }
 
-.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 1.5rem; }
+/* Shared container: 62.5rem + 0.9375rem gutter matches the home page's
+   Foundation rows, so left/right page margins are consistent site-wide. */
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 0.9375rem; }
 
 /* ---------- hero (shared by archive + posts) ---------- */
 .hero {
@@ -27,14 +29,14 @@ a:hover { color: var(--magenta); }
 	color: #fff;
 	padding: clamp(3.5rem, 9vw, 7rem) 1.5rem clamp(3rem, 7vw, 5.5rem);
 }
-.hero > .wrap { padding: 0 1.5rem; }
+.hero > .wrap { padding: 0 0.9375rem; }
 .hero .eyebrow {
 	font-family: var(--font-display);
 	text-transform: uppercase;
-	letter-spacing: .28em;
-	font-size: .8rem;
+	letter-spacing: .24em;
+	font-size: .98rem;
 	font-weight: 500;
-	opacity: .85;
+	opacity: .9;
 	margin: 0 0 1rem;
 }
 .hero h1 {
@@ -53,7 +55,7 @@ main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
 
 .post-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
 	gap: 1.5rem;
 }
 .post-card {
@@ -86,9 +88,9 @@ main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
 .post-card .post-meta { margin-top: .4rem; }
 .post-card .series {
 	font-family: var(--font-display);
-	font-size: .78rem;
+	font-size: .9rem;
 	font-weight: 500;
-	letter-spacing: .14em;
+	letter-spacing: .12em;
 	text-transform: uppercase;
 	color: var(--gold);
 }
@@ -97,8 +99,8 @@ main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
 .post-meta {
 	font-family: var(--font-display);
 	text-transform: uppercase;
-	letter-spacing: .12em;
-	font-size: .72rem;
+	letter-spacing: .1em;
+	font-size: .85rem;
 	font-weight: 500;
 	color: var(--ink-soft);
 }
@@ -172,8 +174,8 @@ main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
 .toc strong {
 	font-family: var(--font-display);
 	text-transform: uppercase;
-	letter-spacing: .16em;
-	font-size: .78rem;
+	letter-spacing: .14em;
+	font-size: .9rem;
 	color: var(--ink-soft);
 	display: block;
 	margin-bottom: .75rem;
@@ -185,11 +187,11 @@ main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
 .tag-row { display: flex; flex-wrap: wrap; gap: .5rem; margin: 2.5rem 0 0; }
 .tag {
 	font-family: var(--font-display);
-	font-size: .74rem;
+	font-size: .85rem;
 	font-weight: 500;
-	letter-spacing: .08em;
+	letter-spacing: .06em;
 	text-transform: uppercase;
-	padding: .35rem .7rem;
+	padding: .4rem .8rem;
 	border: 1px solid var(--line);
 	color: var(--ink-soft);
 	background: var(--paper-2);
@@ -202,8 +204,8 @@ main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
 .post .back {
 	font-family: var(--font-display);
 	text-transform: uppercase;
-	letter-spacing: .14em;
-	font-size: .76rem;
+	letter-spacing: .12em;
+	font-size: .88rem;
 	font-weight: 500;
 	text-decoration: none;
 	display: inline-block;
@@ -225,8 +227,8 @@ main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
 	display: block;
 	font-family: var(--font-display);
 	text-transform: uppercase;
-	letter-spacing: .14em;
-	font-size: .72rem;
+	letter-spacing: .12em;
+	font-size: .85rem;
 	color: var(--ink-soft);
 	margin-bottom: .25rem;
 }
