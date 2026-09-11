@@ -57,6 +57,7 @@ main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
 	gap: 1.5rem;
+	padding-bottom: 3rem;
 }
 .post-card {
 	display: flex;
@@ -78,7 +79,7 @@ main { padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem; }
 .post-card h2 {
 	font-family: var(--font-display);
 	font-weight: 700;
-	font-size: 1.4rem;
+	font-size: 1.618rem;
 	line-height: 1.15;
 	letter-spacing: -.01em;
 	margin: 0;
