@@ -41,6 +41,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 /* Safari exposes this canvas during elastic overscroll. Pink matches the
    copyright footer exactly and is also part of the hero gradient. */
 html { background: var(--magenta); }
+body { background: var(--magenta); }
 
 /* ---------- global header ---------- */
 site-header { display: block; height: var(--header-h); background: var(--crimson); }
@@ -79,7 +80,7 @@ site-header { display: block; height: var(--header-h); background: var(--crimson
 	font-size: 1.15rem;
 	letter-spacing: .16em;
 }
-.site-head .brand:hover { color: var(--gold-bright); }
+.site-head .brand:hover { color: var(--pink-soft); }
 .site-head nav { display: flex; align-items: center; gap: 1.75rem; }
 .site-head .navlink {
 	text-transform: uppercase;
@@ -116,7 +117,12 @@ site-footer { display: block; margin-top: auto; background: var(--magenta); }
 	margin: 0;
 }
 .site-foot .social-icons { margin-top: 1.75rem; display: flex; justify-content: center; gap: .75rem; }
-.site-foot .social-icons img { height: 72px; width: auto; }
+.site-foot .social-icons img {
+	height: 72px;
+	width: auto;
+	transition: filter .2s ease;
+}
+.site-foot .social-icons a:hover img { filter: brightness(.78); }
 .site-foot .copyright { padding: 1.25rem; color: #fff; background: var(--magenta); }
 .site-foot .copyright small { font-size: 1rem; font-weight: 300; }
 

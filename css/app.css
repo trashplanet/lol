@@ -234,6 +234,16 @@ section#technologies h2 {
 	background: var(--crimson);
 }
 
+@media (max-width: 641px) {
+	.tech-chips { gap: .55rem; }
+	.chip {
+		gap: .4rem;
+		padding: .55rem .75rem;
+		font-size: .82rem;
+	}
+	.chip .dot { width: 6px; height: 6px; }
+}
+
 /*footer*/
 section#homepage-footer {
 	padding: 1rem;

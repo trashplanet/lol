@@ -10,7 +10,7 @@ body {
 	font-family: var(--font-body);
 	font-weight: 300;
 	color: var(--ink);
-	background: var(--paper);
+	background: var(--magenta);
 	line-height: 1.65;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -71,7 +71,7 @@ a:hover { color: var(--magenta); }
 .hero p { font-size: 1.2rem; max-width: 46ch; margin: 1.4rem 0 0; opacity: .95; }
 
 /* ---------- archive grid ---------- */
-main { position: relative; overflow: hidden; padding: 0 0 1rem; }
+main { position: relative; overflow: hidden; padding: 0 0 1rem; background: var(--paper); }
 main > .wrap {
 	position: relative;
 	z-index: 1;
@@ -91,6 +91,10 @@ main::after {
 	opacity: .2;
 	pointer-events: none;
 	z-index: 0;
+}
+main.archive::after {
+	right: 50%;
+	transform: translateX(50%);
 }
 
 .post-grid {
