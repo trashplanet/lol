@@ -41,7 +41,7 @@ a:hover { color: var(--magenta); }
 	content: "";
 	position: absolute;
 	top: 50%;
-	right: 10%;
+	right: -8%;
 	transform: translateY(-50%);
 	width: min(640px, 58%);
 	aspect-ratio: 1 / 1;
@@ -77,10 +77,11 @@ main > .wrap { position: relative; z-index: 1; }
 main::after {
 	content: "";
 	position: absolute;
-	left: 50%;
+	left: auto;
+	right: -8%;
 	bottom: -10%;
-	transform: translateX(-50%);
-	width: min(760px, 108%);
+	transform: none;
+	width: min(760px, 90vw);
 	aspect-ratio: 1 / 1;
 	background: url('/img/yellow-laurel-wreath.svg') center / contain no-repeat;
 	opacity: .2;
@@ -262,7 +263,7 @@ main::after {
 	   .postnav is a centred var(--measure)-wide box, so this calc pushes the
 	   wreath's right edge ~40px past the viewport regardless of screen width. */
 	right: calc(var(--measure) / 2 - 50vw - 40px);
-	bottom: -2.5rem;
+	bottom: -6.5rem;
 	width: min(620px, 80vw);
 	aspect-ratio: 1 / 1;
 	background: url('/img/yellow-laurel-wreath.svg') center / contain no-repeat;

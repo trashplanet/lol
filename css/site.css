@@ -38,13 +38,12 @@
    their base styles. */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-/* brand colour behind everything, so rubber-band / overscroll at the top or
-   bottom shows crimson instead of a white gap (the body's #fefefe covers the
-   page itself). */
-html { background: var(--crimson); }
+/* Safari exposes this canvas during elastic overscroll. Pink matches the
+   copyright footer exactly and is also part of the hero gradient. */
+html { background: var(--magenta); }
 
 /* ---------- global header ---------- */
-site-header { display: block; height: var(--header-h); }
+site-header { display: block; height: var(--header-h); background: var(--crimson); }
 
 .site-head {
 	position: fixed;
@@ -94,7 +93,7 @@ site-header { display: block; height: var(--header-h); }
 .site-head .icon:hover img { opacity: .82; }
 
 /* ---------- global footer ---------- */
-site-footer { display: block; margin-top: auto; }
+site-footer { display: block; margin-top: auto; background: var(--magenta); }
 
 .site-foot {
 	font-family: Helvetica, Arial, sans-serif;
