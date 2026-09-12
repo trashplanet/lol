@@ -130,6 +130,10 @@ site-footer { display: block; margin-top: auto; background: var(--magenta); }
 }
 .site-foot .social-icons a:hover img { filter: brightness(.88); }
 .site-foot .copyright { padding: 1.25rem; color: #fff; background: var(--magenta); }
+.site-foot .copyright nav { display: flex; justify-content: center; align-items: center; gap: .7rem; margin-bottom: .65rem; }
+.site-foot .copyright a { color: #fff; font-weight: 600; text-decoration: none; transition: color .2s ease; }
+.site-foot .copyright a:hover { color: var(--gold-bright); }
+.site-foot .copyright span { color: var(--gold-bright); }
 .site-foot .copyright small { font-size: 1rem; font-weight: 300; }
 
 @media (max-width: 640px) {
