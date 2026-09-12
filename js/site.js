@@ -48,11 +48,11 @@ class AuthorBio extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 		<aside class="author-card" aria-labelledby="author-name">
-			<img src="/img/laura-ferruggia-author.png" alt="Laura Ferruggia">
+			<img src="/img/laura-ferruggia-author.png?v=3" alt="Laura Ferruggia">
 			<div>
 				<p class="eyebrow">About the author</p>
 				<h2 id="author-name">Laura Ferruggia</h2>
-				<p>Laura is a Marketing Services Director based in the Pocono Mountains, specializing in SEO, marketing technology, and AI-driven content strategy.</p>
+				<p>Laura is a Marketing Services Director specializing in SEO, marketing technology, WordPress development, and AI-driven workflows.</p>
 				<div class="author-social">
 					<a href="https://x.com/lauregg" rel="me noopener" target="_blank" aria-label="Follow Laura Ferruggia on X"><img src="/img/amber-twitter-icon.png" alt=""></a>
 					<a href="https://www.linkedin.com/in/lauregg" rel="me noopener" target="_blank" aria-label="Connect with Laura Ferruggia on LinkedIn"><img src="/img/amber-linkedin-icon.png" alt=""></a>
