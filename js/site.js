@@ -44,5 +44,24 @@ class SiteFooter extends HTMLElement {
 	}
 }
 
+class AuthorBio extends HTMLElement {
+	connectedCallback() {
+		this.innerHTML = `
+		<aside class="author-card" aria-labelledby="author-name">
+			<img src="/img/laura-ferruggia-author.png" alt="Laura Ferruggia">
+			<div>
+				<p class="eyebrow">About the author</p>
+				<h2 id="author-name">Laura Ferruggia</h2>
+				<p>Laura is a Marketing Services Director based in the Pocono Mountains, specializing in SEO, marketing technology, and AI-driven content strategy.</p>
+				<div class="author-social">
+					<a href="https://x.com/lauregg" rel="me noopener" target="_blank" aria-label="Follow Laura Ferruggia on X"><img src="/img/amber-twitter-icon.png" alt=""></a>
+					<a href="https://www.linkedin.com/in/lauregg" rel="me noopener" target="_blank" aria-label="Connect with Laura Ferruggia on LinkedIn"><img src="/img/amber-linkedin-icon.png" alt=""></a>
+				</div>
+			</div>
+		</aside>`;
+	}
+}
+
 customElements.define("site-header", SiteHeader);
 customElements.define("site-footer", SiteFooter);
+customElements.define("author-bio", AuthorBio);

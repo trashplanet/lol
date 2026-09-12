@@ -244,6 +244,40 @@ main.archive::after {
 	background: var(--paper-2);
 }
 
+/* reusable author card, placed after article tags */
+author-bio { display: block; margin-top: 4rem; }
+.author-card {
+	display: grid;
+	grid-template-columns: 10rem minmax(0, 1fr);
+	gap: 2rem;
+	align-items: center;
+	padding: 2.75rem 3rem;
+	border: 1px solid var(--line);
+	border-top: 7px solid var(--magenta);
+	background: var(--paper);
+}
+.author-card > img {
+	width: 10rem;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.author-card .eyebrow {
+	margin: 0 0 .45rem;
+	font-family: var(--font-display);
+	text-transform: uppercase;
+	letter-spacing: .18em;
+	font-size: .9rem;
+	font-weight: 500;
+	color: var(--crimson);
+}
+.author-card h2 { margin: 0; padding-top: 0; border-top: 0; font-size: 1.85rem; }
+.author-card p:not(.eyebrow) { margin: .75rem 0 0; font-size: 1.08rem; color: var(--ink-soft); }
+.author-social { display: flex; gap: .7rem; margin-top: 1.25rem; }
+.author-social a { display: block; }
+.author-social img { height: 32px; width: auto; transition: filter .2s ease; }
+.author-social a:hover img { filter: brightness(.82); }
+
 /* lead paragraph after the hero */
 .post .lead { font-size: 1.28rem; color: var(--ink); }
 
@@ -286,6 +320,9 @@ main.archive::after {
 }
 
 @media (max-width: 640px) {
+	.author-card { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem; }
+	.author-card > img { width: 8rem; }
+	.author-card h2 { font-size: 1.65rem; }
 	.hero::after {
 		top: auto;
 		right: 50%;
