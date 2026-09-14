@@ -37,7 +37,7 @@ class SiteFooter extends HTMLElement {
 				</div>
 			</div>
 			<div class="copyright">
-				<nav aria-label="Footer navigation"><a href="/links">Links</a><span aria-hidden="true">•</span><a href="/blog/">Blog</a></nav>
+				<nav aria-label="Footer navigation"><a href="/links/">Links</a><span aria-hidden="true">•</span><a href="/blog/">Blog</a></nav>
 				<small>&copy; ${year} Laura Ferruggia</small>
 			</div>
 		</footer>`;
