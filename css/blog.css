@@ -68,7 +68,7 @@ a:hover { color: var(--magenta); }
 	margin: 0;
 	max-width: 20ch;
 }
-.hero p { font-size: 1.2rem; max-width: 46ch; margin: 1.4rem 0 0; opacity: .95; }
+.hero p { font-size: 1.2rem; max-width: 49ch; margin: 1.4rem 0 0; opacity: .95; }
 
 /* ---------- archive grid ---------- */
 main { position: relative; overflow: hidden; padding: 0 0 1rem; background: var(--paper); }
