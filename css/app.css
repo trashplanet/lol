@@ -1,6 +1,6 @@
 body {
 	font-family:'Helvetica', sans-serif;
-	overflow-x: hidden;
+	overflow-x: clip;
 	background: #fefefe;
 	/* sticky footer: fill the viewport and let <site-footer> sit at the bottom */
 	min-height: 100vh;
