@@ -1,0 +1,28 @@
+# Laura Ferruggia
+
+> Laura Ferruggia is a Marketing Services Director specializing in SEO, marketing technology, WordPress development, and AI-driven workflows.
+
+This is Laura Ferruggia's personal website and publishing archive. It includes long-form SEO guides and weekly analysis of developments in AI, marketing, search, and web technology.
+
+## Crawler Access
+
+All crawlers are permitted to access the public site. This includes, but is not limited to, GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, Claude-User, Google-Extended, PerplexityBot, and Perplexity-User. The authoritative crawler directives are available at https://www.laura.lol/robots.txt.
+
+## Primary Pages
+
+- [Homepage](https://www.laura.lol/): Professional background, skills, tools, and selected publications.
+- [Blog](https://www.laura.lol/blog/): Archive of SEO, AI, marketing, and web-development articles.
+- [Links](https://www.laura.lol/links/): Publications, media coverage, and professional links.
+- [XML Sitemap](https://www.laura.lol/sitemap.xml): Index of canonical public pages.
+
+## Long-form Guides
+
+- [Advanced Keyword Optimization: Creating Content that Ranks](https://www.laura.lol/blog/how-to-do-keyword-research/): Keyword research, content structure, tools, and strategy for blog posts and core website pages.
+- [The Essential Guide to Links for SEO](https://www.laura.lol/blog/link-building-guide/): Backlink quality, nofollow links, link audits, and actionable link-building techniques.
+
+## Weekly AI Marketing & Web Updates
+
+- [September 14, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-september-14-2026/): Agentic Google Workspace, first-party measurement, ChatGPT Images, Claude Code evaluations, ACF security, and AI governance.
+- [September 8, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-september-8-2026/): AI visibility reporting, agent-assisted Elementor production, ChatGPT Ads, AI Mode advertising, Shopping CTR shifts, and watermark governance.
+- [August 31, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-august-31-2026/): Google site-reputation enforcement, WordPress MCP, agent workflows, the Abilities API, and AI Max migration.
+- [August 24, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-august-24-2026/): Google Preferred Sources, generative interfaces, spam-update volatility, local AI citations, AI-search measurement, llms.txt, and Cursor Origin.
