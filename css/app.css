@@ -78,7 +78,12 @@ section#hero .columns {
 	align-items: center;
 	gap: 1.85rem;
 }
-section#hero .egg img { height: 200px; margin: 0; }
+section#hero .egg {
+	width: 200px;
+	height: 200px;
+	margin: 0;
+	background: url('/img/yellow-laurel-wreath.svg') center / contain no-repeat;
+}
 section#hero .hero-text {
 	display: flex;
 	flex-direction: column;

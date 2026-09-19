@@ -13,9 +13,9 @@ class SiteHeader extends HTMLElement {
 				<nav aria-label="Primary">
 					<a class="navlink" href="/blog/">Blog</a>
 					<a class="icon" href="https://x.com/lauregg" rel="me noopener" target="_blank" aria-label="Follow Laura Ferruggia on X">
-						<img src="/img/twitter-icon.png" alt=""></a>
+						<img src="/img/twitter-icon.png" alt="" width="100" height="100"></a>
 					<a class="icon" href="https://www.linkedin.com/in/lauregg" rel="me noopener" target="_blank" aria-label="Connect with Laura Ferruggia on LinkedIn">
-						<img src="/img/linkedin-icon.png" alt=""></a>
+						<img src="/img/linkedin-icon.png" alt="" width="100" height="100"></a>
 				</nav>
 			</div>
 		</header>`;
@@ -31,9 +31,9 @@ class SiteFooter extends HTMLElement {
 				<h2>Connect with me on social media.</h2>
 				<div class="social-icons">
 					<a href="https://x.com/lauregg" rel="me noopener" target="_blank" aria-label="Follow Laura Ferruggia on X">
-						<img src="/img/amber-twitter-icon.png" alt=""></a>
+						<img src="/img/amber-twitter-icon.png" alt="" width="100" height="100" loading="lazy" decoding="async"></a>
 					<a href="https://www.linkedin.com/in/lauregg" rel="me noopener" target="_blank" aria-label="Connect with Laura Ferruggia on LinkedIn">
-						<img src="/img/amber-linkedin-icon.png" alt=""></a>
+						<img src="/img/amber-linkedin-icon.png" alt="" width="100" height="100" loading="lazy" decoding="async"></a>
 				</div>
 			</div>
 			<div class="copyright">
@@ -48,14 +48,14 @@ class AuthorBio extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 		<aside class="author-card" aria-labelledby="author-name">
-			<img src="/img/laura-ferruggia-author.png?v=3" alt="Laura Ferruggia">
+			<img src="/img/laura-ferruggia-author.png?v=3" alt="Laura Ferruggia" width="256" height="256" loading="lazy" decoding="async">
 			<div>
 				<p class="eyebrow">About the author</p>
 				<h2 id="author-name">Laura Ferruggia</h2>
 				<p>Laura is a Marketing Services Director specializing in SEO, marketing technology, WordPress development, and AI-driven workflows.</p>
 				<div class="author-social">
-					<a href="https://x.com/lauregg" rel="me noopener" target="_blank" aria-label="Follow Laura Ferruggia on X"><img src="/img/amber-twitter-icon.png" alt=""></a>
-					<a href="https://www.linkedin.com/in/lauregg" rel="me noopener" target="_blank" aria-label="Connect with Laura Ferruggia on LinkedIn"><img src="/img/amber-linkedin-icon.png" alt=""></a>
+					<a href="https://x.com/lauregg" rel="me noopener" target="_blank" aria-label="Follow Laura Ferruggia on X"><img src="/img/amber-twitter-icon.png" alt="" width="100" height="100" loading="lazy" decoding="async"></a>
+					<a href="https://www.linkedin.com/in/lauregg" rel="me noopener" target="_blank" aria-label="Connect with Laura Ferruggia on LinkedIn"><img src="/img/amber-linkedin-icon.png" alt="" width="100" height="100" loading="lazy" decoding="async"></a>
 				</div>
 			</div>
 		</aside>`;
