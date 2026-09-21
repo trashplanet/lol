@@ -22,6 +22,7 @@ All crawlers are permitted to access the public site. This includes, but is not 
 
 ## Weekly AI Marketing & Web Updates
 
+- [September 21, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-september-21-2026/): Conversational ChatGPT Ads, measurable AI shopping visibility, Gemini Live, WordPress security, coding-agent plugins, and marketing data agents.
 - [September 14, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-september-14-2026/): Agentic Google Workspace, first-party measurement, ChatGPT Images, Claude Code evaluations, ACF security, and AI governance.
 - [September 8, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-september-8-2026/): AI visibility reporting, agent-assisted Elementor production, ChatGPT Ads, AI Mode advertising, Shopping CTR shifts, and watermark governance.
 - [August 31, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-august-31-2026/): Google site-reputation enforcement, WordPress MCP, agent workflows, the Abilities API, and AI Max migration.
