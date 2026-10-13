@@ -22,6 +22,8 @@ All crawlers are permitted to access the public site. This includes, but is not 
 
 ## Weekly AI Marketing & Web Updates
 
+- [October 12, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-october-12-2026/): Claude Motion and Dashboards, Figma’s design agent, Conversion Lift, visual ChatGPT ads, WordPress security, and search quality.
+
 - [October 5, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-october-5-2026/): Branded-search AI Overviews, controllable creative workflows, programmable coding agents, revenue attribution, AI content guidance, and campaign localization.
 - [September 28, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-september-28-2026/): Claude Code cloud sessions, cheaper Opus agents, ChatGPT Voice, measurable visual search, more transparent AI Max, and conversational YouTube ads.
 - [September 21, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-september-21-2026/): Conversational ChatGPT Ads, measurable AI shopping visibility, Gemini Live, WordPress security, coding-agent plugins, and marketing data agents.
