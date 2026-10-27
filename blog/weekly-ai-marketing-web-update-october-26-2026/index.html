@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#e91e63">
+	<title>WordPress Security, Portable AI Skills &amp; AI Search | Laura Ferruggia</title>
+	<meta name="description" content="October 26 weekly update: PHP security fixes for WordPress hosting, portable Agent Skills, Google Ads controls, AI-search research, and Workspace updates.">
+	<link rel="canonical" href="https://www.laura.lol/blog/weekly-ai-marketing-web-update-october-26-2026/">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:site_name" content="Laura Ferruggia">
+	<meta property="og:title" content="Critical WordPress Security Fixes, Portable AI Agent Skills, and a Reality Check on AI Search">
+	<meta property="og:description" content="Critical PHP security fixes, portable Agent Skills, Google Ads customer-value and creative controls, AI-search research, and native Workspace improvements.">
+	<meta property="og:url" content="https://www.laura.lol/blog/weekly-ai-marketing-web-update-october-26-2026/">
+	<meta property="article:published_time" content="2026-10-26">
+	<meta property="article:author" content="Laura Ferruggia">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Critical WordPress Security Fixes, Portable AI Agent Skills, and a Reality Check on AI Search">
+	<meta name="twitter:description" content="Critical PHP security fixes, portable Agent Skills, Google Ads customer-value and creative controls, AI-search research, and native Workspace improvements.">
+	<link rel="icon" href="/laurel-icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/css/site.css?v=20260920-7">
+	<link rel="stylesheet" href="/css/blog.css?v=20260920-9">
+	<script src="/js/site.js?v=20260920-7" defer></script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BlogPosting",
+		"headline": "Critical WordPress Security Fixes, Portable AI Agent Skills, and a Reality Check on AI Search",
+		"description": "October 26 weekly update: PHP security fixes for WordPress hosting, portable Agent Skills, Google Ads controls, AI-search research, and Workspace updates.",
+		"datePublished": "2026-10-26",
+		"dateModified": "2026-10-26",
+		"author": { "@type": "Person", "@id": "https://www.laura.lol/#laura-ferruggia", "name": "Laura Ferruggia", "url": "https://www.laura.lol/" },
+		"publisher": { "@type": "Person", "@id": "https://www.laura.lol/#laura-ferruggia", "name": "Laura Ferruggia", "url": "https://www.laura.lol/" },
+		"mainEntityOfPage": "https://www.laura.lol/blog/weekly-ai-marketing-web-update-october-26-2026/"
+	}
+	</script>
+</head>
+<body>
+	<site-header></site-header>
+
+	<section class="hero">
+		<div class="wrap">
+			<p class="eyebrow">Weekly AI Marketing &amp; Web Update</p>
+			<h1>Critical WordPress Security Fixes, Portable AI Agent Skills, and a Reality Check on AI Search</h1>
+		</div>
+	</section>
+
+	<main>
+	<article class="post">
+		<a class="back" href="/blog/">&larr; All posts</a>
+		<p class="post-meta"><time datetime="2026-10-26">October 26, 2026</time> · 24 min read · by Laura Ferruggia</p>
+		<nav class="toc" aria-label="Table of contents">
+			<strong>Table of contents</strong>
+			<ol>
+				<li><a href="#php-security-fixes">Two critical PHP vulnerabilities require immediate attention across WordPress hosting environments</a></li>
+				<li><a href="#portable-agent-skills">Anthropic donates Agent Skills to a vendor-neutral foundation, making reusable AI workflows a bigger deal</a></li>
+				<li><a href="#customer-acquisition-and-retention">Google Ads expands customer acquisition and retention controls, including more flexible customer-value bidding</a></li>
+				<li><a href="#performance-max-and-bidding-exploration">Performance Max gets new creative-sourcing controls, while Smart Bidding Exploration expands to Shopping and PMax</a></li>
+				<li><a href="#ai-search-research">New research shows AI Overviews dominating commercial searches — but ChatGPT referrals remain tiny compared with Google</a></li>
+				<li><a href="#workspace-sheets-and-vids">Google Workspace adds conversational BigQuery analysis in Sheets, while Vids gets more practical editing controls</a></li>
+				<li><a href="#also-worth-knowing">Also worth knowing</a></li>
+				<li><a href="#what-we-should-do">What we should actually do this week</a></li>
+				<li><a href="#the-bigger-pattern">The bigger pattern</a></li>
+				<li><a href="#sources">Sources</a></li>
+			</ol>
+		</nav>
+
+		<p class="lead">This week delivered a useful reminder that AI isn&#x27;t the only thing changing how marketing and web teams operate. Sometimes the most consequential development is a security vulnerability that needs fixing immediately. Sometimes it&#x27;s an advertising platform quietly changing how campaigns spend money. And sometimes it&#x27;s new research suggesting the industry might be getting a little carried away with its favorite buzzword.</p>
+		<p>The biggest developments span WordPress infrastructure, AI coding agents, paid-media optimization, AI-search visibility, and Google Workspace.</p>
+		<p>There&#x27;s also a particularly interesting shift happening with AI agent skills: the knowledge and instructions we build for one agent are becoming increasingly portable across platforms.</p>
+		<p><strong>The broader pattern is that operational infrastructure is becoming more valuable than access to any individual AI model.</strong> That includes security, reusable workflows, customer data, and the ability to distinguish genuinely incremental business results from impressive-looking dashboards.</p>
+		<h2 id="php-security-fixes">1. Two critical PHP vulnerabilities require immediate attention across WordPress hosting environments</h2>
+		<p><strong>October 21–22 | Critical security update</strong></p>
+		<p>This is the week&#x27;s most urgent development for teams maintaining WordPress websites.</p>
+		<p>On October 21, the PHP project released emergency security updates addressing two critical vulnerabilities: <strong>CVE-2026-109618 and CVE-2026-109619</strong>.</p>
+		<p>Both vulnerabilities can potentially allow unauthenticated remote code execution under certain conditions.</p>
+		<p>That&#x27;s a considerably bigger problem than somebody finding a clever way to inject JavaScript into a comment field.</p>
+		<p>These vulnerabilities affect PHP itself, the programming language powering WordPress and a substantial portion of the web.</p>
+		<p>The PHP Foundation confirmed that the issues involve memory management and error handling, including conditions that can be triggered before application-level code executes.</p>
+		<p>The affected components are fundamental enough that updating WordPress core, plugins, or themes does not resolve the underlying problem.</p>
+		<p><strong>Patched PHP versions include:</strong></p>
+		<ul>
+<li>PHP 8.2.35</li>
+<li>PHP 8.3.36</li>
+<li>PHP 8.4.27</li>
+<li>PHP 8.5.12</li>
+</ul>
+		<p>The PHP Foundation assigned the vulnerabilities a CVSS severity score of 9.2.</p>
+		<h3>WP Engine has already patched its infrastructure</h3>
+		<p>WP Engine confirmed on October 22 that it had completed patching across its managed hosting platforms.</p>
+		<p>The company initially implemented protective measures through its web application firewall and PHP configuration before deploying the official patches.</p>
+		<p>WP Engine reported blocking more than one million requests associated with the vulnerabilities during the first 24 hours and said it had observed no successful exploitation attempts.</p>
+		<p><strong>WP Engine customers do not need to perform a manual PHP update for these vulnerabilities.</strong> The provider says its hosted environments have already been patched, including supported legacy PHP environments covered by its long-term-support arrangements.</p>
+		<p>For websites hosted elsewhere, the situation depends on the hosting provider and the PHP version actually running.</p>
+		<h3>An interesting AI connection</h3>
+		<p>The PHP Foundation also disclosed that AI-assisted security research played a role in investigating the vulnerabilities.</p>
+		<p>Researchers and organizations involved included OpenAI, Anthropic, security firms, and the PHP Foundation&#x27;s own engineering team.</p>
+		<p>The Foundation has been using Claude Mythos and OpenAI security tools alongside conventional auditing, testing, and human security review.</p>
+		<p>That&#x27;s a useful real-world example of AI-assisted development producing something more consequential than another benchmark score.</p>
+		<h3>Why it matters</h3>
+		<p>For agencies maintaining dozens or hundreds of websites, infrastructure vulnerabilities can create risks that aren&#x27;t visible inside the WordPress dashboard.</p>
+		<p>A website might have the latest WordPress core version, updated plugins, and a properly maintained custom theme while still running on vulnerable PHP infrastructure.</p>
+		<p>This is also a good reminder that automated code review and WordPress-specific security scanning are only parts of the security picture.</p>
+		<p>The hosting environment matters.</p>
+		<h3>What to do</h3>
+		<p>Immediately verify PHP patch status across maintained hosting environments.</p>
+		<p>For WP Engine installations, confirm that the sites are on the managed platform covered by the provider&#x27;s announcement and retain the security notice for internal records.</p>
+		<p>For other hosting providers, confirm that the relevant PHP security fixes have been applied. Do not assume that a familiar version number means the environment is vulnerable or patched; some providers use backported fixes.</p>
+		<p>After any required PHP upgrade, test critical functionality, particularly custom themes, ACF components, Gutenberg blocks, forms, integrations, and ecommerce workflows.</p>
+		<p>This is an infrastructure security issue, not an excuse to send developers on a three-day expedition through every CSS file.</p>
+		<h2 id="portable-agent-skills">2. Anthropic donates Agent Skills to a vendor-neutral foundation, making reusable AI workflows a bigger deal</h2>
+		<p><strong>October 22 | Open-standard governance announcement</strong></p>
+		<p>Anthropic announced that it is donating <strong>Agent Skills</strong> to the Agentic AI Foundation under the Linux Foundation.</p>
+		<p>This is not the launch of Agent Skills themselves. The format has existed for some time.</p>
+		<p>The important development is that the standard is moving into a vendor-neutral governance structure.</p>
+		<p>Anthropic says more than 70 agent platforms have integrated Agent Skills, including ChatGPT, Cursor, GitHub Copilot, and VS Code.</p>
+		<p>The company also reports approximately one million published skills and nearly 280 million installations.</p>
+		<p>The numbers are impressive, but the underlying idea is remarkably simple.</p>
+		<p>An Agent Skill is essentially a folder containing instructions, typically beginning with a <code>SKILL.md</code> file, along with any supporting scripts or reference materials.</p>
+		<p>Those instructions teach an AI agent how to perform a specific task.</p>
+		<p>Rather than explaining the same process repeatedly, organizations can package their standards into reusable instructions.</p>
+		<h3>Why it matters</h3>
+		<p>For teams already using Claude Code, this is a potentially important long-term development.</p>
+		<p>Consider a development team that has established standards for custom WordPress builds.</p>
+		<p>Those standards might cover:</p>
+		<ul>
+<li>Semantic HTML and accessibility requirements.</li>
+<li>SEO metadata and structured-data implementation.</li>
+<li>WordPress escaping, sanitization, and security conventions.</li>
+<li>Performance budgets and Core Web Vitals.</li>
+<li>Reusable components and ACF field architecture.</li>
+<li>Required testing before a task is considered complete.</li>
+</ul>
+		<p>Traditionally, this knowledge lives in documentation, individual developers&#x27; heads, or project-specific instructions.</p>
+		<p>Agent Skills provide a way to package that knowledge into reusable workflows.</p>
+		<p>And because the standard is becoming more broadly supported, the investment is less dependent on one AI vendor.</p>
+		<p>A skill developed for Claude Code may also be usable by another compatible agent, although tool support and execution behavior can differ.</p>
+		<p>That&#x27;s the meaningful distinction.</p>
+		<p><strong>The value is shifting from knowing how to prompt an agent toward defining how the organization expects work to be performed.</strong></p>
+		<h3>What to try</h3>
+		<p>Build one internal skill around a process that already matters.</p>
+		<p>For a WordPress development team, a strong candidate would be a pre-completion QA skill for custom theme development.</p>
+		<p>The skill could instruct the agent to inspect changed files, identify accessibility and SEO concerns, run available tests, and produce a structured review before declaring the work complete.</p>
+		<p>Test it in Claude Code first.</p>
+		<p>Then evaluate how well the same skill transfers to another supported agent.</p>
+		<p>Measure the number of issues identified, how consistently the skill is followed, and whether it reduces human review time.</p>
+		<p>One important caveat: skills can include executable scripts and instructions that influence agent behavior. Treat third-party skills as software dependencies requiring review, not harmless documents.</p>
+		<h3>Agency implication</h3>
+		<p>This creates an opportunity to turn internal expertise into <strong>reusable operational infrastructure</strong>.</p>
+		<p>The strongest agencies won&#x27;t necessarily be the ones with the largest collection of AI subscriptions.</p>
+		<p>They&#x27;ll be the ones that have encoded their standards, procedures, and specialist knowledge into systems that help more employees execute consistently.</p>
+		<p>That&#x27;s particularly valuable for organizations trying to expand employees&#x27; capabilities beyond their original specialties without sacrificing quality.</p>
+		<h2 id="customer-acquisition-and-retention">3. Google Ads expands customer acquisition and retention controls, including more flexible customer-value bidding</h2>
+		<p><strong>October 22 | Rolling out during October</strong></p>
+		<p>Google Ads announced several changes designed to help advertisers distinguish between acquiring new customers, retaining existing customers, and pursuing customers with higher expected value.</p>
+		<p>The changes affect eligible Search, Shopping, and Performance Max campaigns.</p>
+		<p>Three developments are particularly relevant.</p>
+		<h3>High-value customer acquisition expands to Shopping</h3>
+		<p>Google is extending New Customer High Value Mode to Shopping campaigns.</p>
+		<p>Previously available in other campaign types, this feature allows advertisers to prioritize new customers who are expected to generate greater long-term value.</p>
+		<p>Rather than treating every first-time purchase as equally valuable, campaigns can incorporate signals about the type of customer the business wants to acquire.</p>
+		<h3>Customer retention goals become more widely available</h3>
+		<p>Google is expanding retention capabilities across supported campaign types.</p>
+		<p>The available approaches include:</p>
+		<p><strong>Re-engagement Mode:</strong> Prioritizes customers who haven&#x27;t purchased recently.</p>
+		<p><strong>Loyalty Mode:</strong> Supports campaigns targeting loyalty-program members with relevant messaging or offers.</p>
+		<p><strong>Retention Only Mode:</strong> Focuses campaigns exclusively on specified existing-customer segments.</p>
+		<p>These features are rolling out during October, so availability may vary by account.</p>
+		<h3>Percentage-based customer-value multipliers</h3>
+		<p>Google is also introducing percentage-based adjustments to customer value.</p>
+		<p>Previously, advertisers could use fixed monetary adjustments to communicate that certain customers were worth more.</p>
+		<p>Percentage multipliers allow those adjustments to scale with transaction value.</p>
+		<p>For example, a 20% multiplier increases the value signal proportionally whether a customer purchases $50 or $500 worth of products.</p>
+		<p>That can be more appropriate for businesses with substantial differences in order values.</p>
+		<h3>Why it matters</h3>
+		<p>Advertising platforms are becoming increasingly sophisticated at optimizing toward the value advertisers provide.</p>
+		<p>The problem is that many advertisers still provide incomplete or poorly structured value signals.</p>
+		<p>A business might know that repeat customers are substantially more profitable than first-time customers.</p>
+		<p>It might also know that certain product categories attract customers with higher lifetime value.</p>
+		<p>But if those distinctions aren&#x27;t reflected in campaign data and bidding configuration, the advertising platform cannot optimize toward them effectively.</p>
+		<p>These changes provide more ways to translate business economics into campaign strategy.</p>
+		<p>However, percentage-based value adjustments change the signals used by automated bidding. They do not guarantee a corresponding increase in actual revenue or customer profitability.</p>
+		<h3>What to try</h3>
+		<p>Identify an ecommerce account with reliable customer-history data.</p>
+		<p>Evaluate whether the account can accurately distinguish new customers, returning customers, lapsed customers, and loyalty members.</p>
+		<p>Then review whether the expanded acquisition or retention goals support a meaningful business objective.</p>
+		<p>For example, a retailer might test whether prioritizing high-value new customers produces better long-term results than maximizing immediate purchase volume.</p>
+		<p>Before implementing percentage multipliers, establish the actual economic justification for those adjustments.</p>
+		<p>Making every customer appear 30% more valuable because the interface allows it is not a measurement strategy.</p>
+		<h3>Agency implication</h3>
+		<p>These developments strengthen the connection between <strong>paid-media management and customer lifecycle strategy</strong>.</p>
+		<p>Agencies can provide greater value by helping clients translate retention, lifetime value, and customer segmentation into advertising decisions.</p>
+		<p>The opportunity is particularly strong when paid-media specialists work closely with CRM, ecommerce, and analytics teams.</p>
+		<h2 id="performance-max-and-bidding-exploration">4. Performance Max gets new creative-sourcing controls, while Smart Bidding Exploration expands to Shopping and PMax</h2>
+		<p><strong>October 22–23 | Account-dependent availability</strong></p>
+		<p>Google Ads introduced two developments this week that could materially change how automated campaigns operate.</p>
+		<p>One concerns creative assets.</p>
+		<p>The other concerns bidding flexibility.</p>
+		<p>Both deserve attention because they give Google&#x27;s systems more room to make decisions on behalf of advertisers.</p>
+		<h3>Performance Max can source additional images and videos automatically</h3>
+		<p>New settings spotted in Performance Max allow Google to pull creative assets from existing online content.</p>
+		<p>The additions include:</p>
+		<p><strong>Landing page images:</strong> Allows Google to source images directly from an advertiser&#x27;s website.</p>
+		<p><strong>Sourced videos:</strong> Allows Google to use video content from sources such as landing pages, linked YouTube channels, and potentially other connected online properties.</p>
+		<p>One advertiser reported that Google could automatically add up to ten sourced videos to an asset group.</p>
+		<p>The new settings appear alongside existing options for text customization, image enhancement, and video enhancement.</p>
+		<p>Importantly, the advertiser who identified the feature reported that <strong>Sourced videos was enabled automatically</strong>.</p>
+		<p>That observation should not be interpreted as confirmation that every account has the feature enabled by default.</p>
+		<p>But it is a good reason to inspect campaign settings.</p>
+		<h3>Why the creative change matters</h3>
+		<p>This could reduce the time required to build Performance Max asset groups, particularly for advertisers with extensive product photography and video libraries.</p>
+		<p>But it also introduces creative-control risks.</p>
+		<p>A campaign might source imagery that is outdated, poorly cropped, off-brand, or not licensed for advertising use.</p>
+		<p>A video created for an organic social campaign may not be appropriate as a paid advertisement.</p>
+		<p>And a website may contain images that were never intended to become standalone advertising assets.</p>
+		<p>Convenience is wonderful until the platform decides that a random image from the footer deserves its own advertising budget.</p>
+		<h3>Smart Bidding Exploration expands</h3>
+		<p>On October 23, Google expanded Smart Bidding Exploration to eligible Shopping and Performance Max campaigns.</p>
+		<p>The feature was previously available for Search campaigns.</p>
+		<p>It gives Google&#x27;s bidding system more flexibility to pursue conversion opportunities that might otherwise be excluded by strict Target ROAS settings.</p>
+		<p>Advertisers can select a Target ROAS tolerance between <strong>5% and 30%</strong>.</p>
+		<p>For example, a campaign with a 200% Target ROAS and a 10% tolerance would effectively allow exploration against a 180% ROAS target.</p>
+		<p>This is not a new targeting method.</p>
+		<p>It does not automatically expand the keywords or audiences a campaign can reach.</p>
+		<p>Instead, it allows the bidding system to compete more aggressively for eligible opportunities that might otherwise be passed over.</p>
+		<p><strong>Eligibility matters:</strong> Campaigns must use Target ROAS bidding and should not be limited by budget. Additional restrictions apply to portfolio bidding strategies and Search Ads 360.</p>
+		<h3>What to try</h3>
+		<p>First, review Performance Max asset optimization settings.</p>
+		<p>Check whether Landing page images or Sourced videos are available and enabled.</p>
+		<p>Confirm that any automatically sourced creative is appropriate, current, and authorized for advertising.</p>
+		<p>Second, identify a Shopping or Performance Max campaign with sufficient budget and a Target ROAS strategy that may be restricting volume.</p>
+		<p>Evaluate whether a controlled Smart Bidding Exploration test could produce additional profitable conversions.</p>
+		<p>Do not enable it simply because the campaign would benefit from more conversions.</p>
+		<p>The important question is whether the business can accept the lower effective ROAS target in exchange for additional volume.</p>
+		<h3>Agency implication</h3>
+		<p>Automated advertising is increasingly about defining the boundaries within which algorithms operate.</p>
+		<p>Advertisers still need specialists to determine which assets are appropriate, which performance tradeoffs make economic sense, and how to evaluate the results.</p>
+		<p>The agency&#x27;s value isn&#x27;t disappearing because Google can make more decisions.</p>
+		<p>It&#x27;s shifting toward making sure Google is making those decisions with the right information and constraints.</p>
+		<h2 id="ai-search-research">5. New research shows AI Overviews dominating commercial searches — but ChatGPT referrals remain tiny compared with Google</h2>
+		<p><strong>October 21–22 | New research, not a Google algorithm announcement</strong></p>
+		<p>Two studies published this week provide an interesting reality check on AI search.</p>
+		<p>The first suggests AI-generated answers are becoming increasingly common for commercially valuable Google searches.</p>
+		<p>The second suggests standalone AI assistants still contribute a relatively small portion of measurable website traffic.</p>
+		<p>Both findings matter, especially when deciding how much time and money to invest in AI-search optimization.</p>
+		<h3>AI Overviews appeared on 88% of tracked commercial queries</h3>
+		<p>Semrush analyzed 400 U.S. desktop keywords across banking, ecommerce, and software.</p>
+		<p>The study tracked five types of commercial searches:</p>
+		<ul>
+<li>Product and service alternatives.</li>
+<li>Brand-versus-brand comparisons.</li>
+<li>Best-product recommendations.</li>
+<li>Pricing and cost queries.</li>
+<li>Reviews.</li>
+</ul>
+		<p>Across the sample, AI Overview coverage increased from approximately <strong>46% in September 2025 to 88% in August 2026</strong>.</p>
+		<p>Review-related searches experienced particularly dramatic growth.</p>
+		<p>AI Overviews appeared for approximately 30% of tracked review searches at the beginning of the study and nearly 90% by the end.</p>
+		<p>For “best X for Y” searches, coverage reached approximately 96%.</p>
+		<p>Ecommerce experienced the largest increase among the three industries studied, rising from roughly 33% to 85%.</p>
+		<p>These are substantial changes.</p>
+		<p>But the methodology matters.</p>
+		<p>This was a defined sample of 400 commercial keywords, not a measurement of every commercial search on Google.</p>
+		<p>The study also did not establish whether AI Overview growth caused corresponding changes in clicks or conversions.</p>
+		<h3>ChatGPT generated less than 1% as much referral traffic as Google organic search</h3>
+		<p>A separate analysis by SEO researcher Marie Haynes examined more than 145 million sessions across 100 websites.</p>
+		<p>According to the study, ChatGPT generated approximately <strong>0.62% as many sessions as Google organic search</strong>.</p>
+		<p>Including referrals from other large language models increased that figure to approximately 0.73%.</p>
+		<p>That&#x27;s 0.73% of Google organic traffic, not 0.73% of all website traffic.</p>
+		<p>The conversion data was also interesting.</p>
+		<p>Among the 55 websites tracking conversions, ChatGPT visitors reportedly converted at 13.8%, compared with 3.02% for Google organic visitors.</p>
+		<p>However, Google organic search still generated approximately <strong>27 times as many conversions as all tracked LLM referrals combined</strong>.</p>
+		<p>The study has limitations, including incomplete details about industry mix, reporting periods, and conversion definitions.</p>
+		<p>AI referral attribution is also imperfect.</p>
+		<p>Still, the results provide a useful counterweight to claims that traditional SEO is becoming irrelevant.</p>
+		<h3>Why it matters</h3>
+		<p>These studies illustrate a distinction that marketing teams need to understand.</p>
+		<p><strong>AI is becoming a major part of Google Search, but standalone AI assistants are not necessarily becoming major sources of website traffic at the same pace.</strong></p>
+		<p>Those are different developments.</p>
+		<p>For many businesses, Google organic search remains substantially more important than referral traffic from ChatGPT or other AI assistants.</p>
+		<p>At the same time, the search results themselves are changing.</p>
+		<p>AI Overviews increasingly appear for comparison, review, and purchase-research queries that have traditionally been important to SEO and conversion strategy.</p>
+		<p>That means AI-search optimization cannot be treated as completely separate from conventional SEO.</p>
+		<h3>What to try</h3>
+		<p>Start by reviewing commercial-intent keywords.</p>
+		<p>Prioritize comparisons, alternatives, pricing, reviews, and “best for” queries.</p>
+		<p>Record whether AI Overviews appear, which sources receive citations, and how competitors are represented.</p>
+		<p>Then compare that visibility against existing rankings, organic traffic, and conversion performance.</p>
+		<p>For AI referral reporting, evaluate actual traffic and business outcomes before deciding whether additional investment is justified.</p>
+		<p>Avoid assigning equal priority to every AI platform simply because they all have impressive demos.</p>
+		<h3>Agency implication</h3>
+		<p>The strongest opportunity is integrating AI-search visibility into established SEO and content strategy.</p>
+		<p>Comparison pages, product information, service explanations, reviews, and authoritative supporting content remain valuable.</p>
+		<p>What changes is how those assets are discovered, summarized, and presented.</p>
+		<p>The goal should be <strong>stronger visibility across the search journey</strong>, not creating an entirely separate collection of questionable GEO deliverables.</p>
+		<h2 id="workspace-sheets-and-vids">6. Google Workspace adds conversational BigQuery analysis in Sheets, while Vids gets more practical editing controls</h2>
+		<p><strong>October 19–23 | Phased rollouts and plan-dependent access</strong></p>
+		<p>Google Workspace introduced several useful improvements this week.</p>
+		<p>Two are particularly relevant to marketing and content operations.</p>
+		<h3>Gemini can now analyze BigQuery data directly through Google Sheets</h3>
+		<p>Google announced a new capability allowing eligible users to analyze connected BigQuery datasets conversationally through Gemini in Google Sheets.</p>
+		<p>After connecting a spreadsheet to BigQuery through Connected Sheets, users can ask questions about the underlying data using natural language.</p>
+		<p>Gemini can query the full connected dataset rather than limiting its analysis to the rows currently displayed in the spreadsheet.</p>
+		<p>It can also generate connected charts, pivot tables, and dashboard-style views.</p>
+		<p>For example, a user could ask Gemini to compare quarterly sales by region, identify the products contributing most to growth, and build a reporting view.</p>
+		<p>Gemini can propose an analysis plan and create a new spreadsheet tab containing connected objects.</p>
+		<p>Those objects can remain linked to the underlying data and support refreshes.</p>
+		<p><strong>Availability:</strong> Gradual rollout beginning October 19, with access limited to eligible Workspace plans and users who already have permission to query the connected BigQuery data.</p>
+		<h3>Why it matters</h3>
+		<p>This could reduce the number of routine reporting requests that require assistance from a data analyst or developer.</p>
+		<p>For organizations already using BigQuery, it creates a more accessible interface for exploring large datasets.</p>
+		<p>A marketer could investigate campaign performance, customer trends, or sales patterns without manually writing SQL for every question.</p>
+		<p>However, this is not a replacement for data governance or analytical judgment.</p>
+		<p>Users still need to understand what the underlying metrics represent and whether the generated analysis answers the correct business question.</p>
+		<h3>Google Vids gains independent audio editing and playback-speed controls</h3>
+		<p>Google also announced two practical editing improvements for Google Vids.</p>
+		<p><strong>Playback-speed controls</strong> allow users to speed up clips to 2x or slow them down to 0.25x.</p>
+		<p><strong>Audio extraction</strong> allows users to separate a video&#x27;s audio track from the visual clip.</p>
+		<p>Once extracted, the audio can be trimmed, moved, or reused independently across the timeline.</p>
+		<p>These aren&#x27;t revolutionary capabilities in the broader video-editing market.</p>
+		<p>But they&#x27;re useful additions to a lightweight production environment.</p>
+		<p>For marketing teams producing short explainers, tutorials, internal training, and social video, fewer trips to a separate editing application can make a meaningful difference.</p>
+		<p>Both features are rolling out gradually and are available across Google Workspace and personal Google accounts.</p>
+		<h3>What to try</h3>
+		<p>For teams already using BigQuery, test Gemini in Connected Sheets against a real reporting question using approved data and existing permissions.</p>
+		<p>Compare the generated analysis with a known, validated report.</p>
+		<p>For content teams, take a short product walkthrough or educational video and test whether Google Vids can handle the required pacing, audio adjustments, and final edits without a more sophisticated video editor.</p>
+		<p>These are native Google capabilities, but organizations should still follow their existing Workspace administration, data-access, and compliance policies.</p>
+		<p>A Google Workspace BAA or approved Google environment should not be interpreted as blanket permission to connect separate third-party AI vendors.</p>
+		<h3>Agency implication</h3>
+		<p>These developments support a broader shift toward cross-functional execution.</p>
+		<p>Marketing employees can increasingly perform routine data exploration and lightweight media production without relying on specialized teams for every step.</p>
+		<p>That doesn&#x27;t eliminate the value of data analysts or professional video editors.</p>
+		<p>It allows those specialists to focus on work where their expertise produces the greatest return.</p>
+		<h2 id="also-worth-knowing">Also worth knowing</h2>
+		<h3>The ChatGPT referral-tracking problem from last week was a bug — and it&#x27;s been fixed</h3>
+		<p>Last week&#x27;s update covered an apparent change to ChatGPT outbound links that was causing AI referral traffic to be misclassified as Direct traffic.</p>
+		<p>There&#x27;s now a meaningful resolution.</p>
+		<p>OpenAI confirmed that the missing UTM parameters were a known bug.</p>
+		<p>The fix began rolling out October 15.</p>
+		<p>According to reporting published October 20, tagged ChatGPT clicks had recovered to approximately 95–100% of their previous levels by the morning of October 15.</p>
+		<p>For analytics reporting, the recommended action is to <strong>annotate October 8–15 as an affected attribution period</strong>.</p>
+		<p>Do not interpret the temporary decline as evidence that AI-search visibility or traffic genuinely collapsed.</p>
+		<p>And don&#x27;t rebuild your attribution model because somebody accidentally broke a tracking parameter.</p>
+		<h3>Google Docs introduces Docs Live for voice-driven document creation</h3>
+		<p>Google began rolling out Docs Live to eligible Workspace users on Android and iOS.</p>
+		<p>The feature allows users to create structured documents through natural conversation.</p>
+		<p>It can use permitted context from Gmail, Drive, and Chat to help draft materials such as project proposals, meeting summaries, and presentation outlines.</p>
+		<p>This could be useful for employees who prefer dictation or frequently need to capture ideas while away from their desks.</p>
+		<p>Access depends on the organization&#x27;s Workspace plan and Gemini configuration.</p>
+		<p>Because the feature can reference Workspace information, organizations should confirm that its use aligns with existing internal data-handling policies before recommending it broadly.</p>
+		<h3>No major new Figma, ACF, Elementor, or WordPress core announcement warrants repeating last week&#x27;s coverage</h3>
+		<p>The previous update covered Figma&#x27;s substantial design-to-development announcements.</p>
+		<p>Those developments remain worth testing, but they are not new this week.</p>
+		<p>Similarly, the October 6 WordPress core security release has already been covered.</p>
+		<p>The PHP vulnerabilities discussed above are a separate, genuinely new security issue.</p>
+		<p>There is no reason to fill every weekly update with recycled product announcements merely because a category appears on the editorial checklist.</p>
+		<h2 id="what-we-should-do">What we should actually do this week</h2>
+		<p>These actions are ranked by urgency, operational impact, and the likelihood of producing a useful result.</p>
+		<h3>1. Verify PHP security patch status across every maintained hosting environment.</h3>
+		<p>This is the highest-priority action.</p>
+		<p>Confirm that affected PHP environments have received the October 21 security fixes.</p>
+		<p>WP Engine reports that its managed environments are already patched, but installations on other hosting platforms should be verified individually.</p>
+		<p>Document the results and investigate any unresolved exposure immediately.</p>
+		<h3>2. Audit Performance Max creative-sourcing settings.</h3>
+		<p>Check whether Landing page images and Sourced videos are available or enabled.</p>
+		<p>Review which assets Google could potentially use and confirm that automatically sourced content is appropriate for paid advertising.</p>
+		<p>This is a quick audit with the potential to prevent some spectacularly stupid creative decisions.</p>
+		<h3>3. Build one reusable Agent Skill around an existing agency process.</h3>
+		<p>Start with a high-value, repeatable workflow.</p>
+		<p>A custom WordPress development QA skill is a strong candidate.</p>
+		<p>Test it in Claude Code and evaluate whether the instructions can be reused in another supported environment.</p>
+		<p>Focus on consistency and measurable reduction in review work.</p>
+		<h3>4. Review Google Ads customer-value and retention opportunities.</h3>
+		<p>Identify ecommerce clients with reliable customer-history data.</p>
+		<p>Evaluate whether high-value customer acquisition, retention goals, or percentage-based value adjustments could improve bidding strategy.</p>
+		<p>Do not implement changes without a clear business justification.</p>
+		<h3>5. Test Smart Bidding Exploration on an eligible campaign.</h3>
+		<p>Choose a Shopping or Performance Max campaign using Target ROAS with adequate budget.</p>
+		<p>Evaluate whether accepting a modest ROAS tolerance could produce additional profitable conversions.</p>
+		<p>Monitor actual business results rather than assuming additional conversion volume automatically means improvement.</p>
+		<h3>6. Expand commercial-intent AI Overview monitoring.</h3>
+		<p>Prioritize comparison, review, alternatives, and pricing queries.</p>
+		<p>Track which brands and pages Google cites, how prominently sources appear, and whether the results create opportunities or risks.</p>
+		<p>Connect the findings to established SEO and conversion reporting.</p>
+		<h3>7. Test Google&#x27;s native Workspace improvements where they fit existing workflows.</h3>
+		<p>For eligible organizations using BigQuery, evaluate conversational analysis in Connected Sheets.</p>
+		<p>For content teams, test Google Vids&#x27; expanded editing capabilities.</p>
+		<p>Keep experiments within approved Workspace services, permissions, and data-handling policies.</p>
+		<h3>8. Correct AI referral reporting for October 8–15.</h3>
+		<p>Annotate the affected period and account for the temporary ChatGPT UTM tracking bug.</p>
+		<p>Avoid drawing performance conclusions from the attribution anomaly.</p>
+		<h2 id="the-bigger-pattern">The bigger pattern</h2>
+		<p>This week&#x27;s developments highlight three important shifts in marketing and web operations.</p>
+		<p><strong>First, the infrastructure surrounding AI-generated work is becoming increasingly important.</strong></p>
+		<p>Anthropic&#x27;s decision to move Agent Skills into a vendor-neutral foundation is significant because it makes reusable operational knowledge less dependent on a particular AI platform.</p>
+		<p>Organizations can increasingly invest in documented procedures, standards, and reusable agent instructions that survive changes in their preferred tools.</p>
+		<p>That&#x27;s a more durable advantage than mastering the latest prompt-writing trick.</p>
+		<p><strong>Second, advertising automation is becoming more sophisticated, but also more dependent on the quality of human decisions.</strong></p>
+		<p>Google can source creative assets automatically, explore additional bidding opportunities, and optimize toward more nuanced customer-value signals.</p>
+		<p>But those capabilities only help when the advertiser has accurate data, appropriate creative, and a realistic understanding of customer economics.</p>
+		<p>Automation doesn&#x27;t eliminate strategic decisions.</p>
+		<p>It makes bad strategic decisions easier to execute at scale.</p>
+		<p><strong>Third, AI search is changing the search experience faster than it&#x27;s replacing established sources of website traffic.</strong></p>
+		<p>AI Overviews are becoming common across commercial Google searches.</p>
+		<p>At the same time, available referral data suggests traditional Google organic search still generates dramatically more website visits and conversions than standalone AI assistants.</p>
+		<p>That argues for evolving SEO rather than abandoning it.</p>
+		<p>The opportunity is to understand how AI changes discovery, comparison, evaluation, and attribution while continuing to invest in the channels that produce measurable business results.</p>
+		<p>For agencies, these developments reinforce a broader competitive advantage: <strong>the ability to expand what employees can accomplish while preserving the expertise, standards, and operational controls that make the work reliable.</strong></p>
+		<p>AI makes it easier to produce code, creative, reports, and content.</p>
+		<p>But the organizations that benefit most will be the ones that turn those capabilities into repeatable processes with clear accountability and measurable outcomes.</p>
+		<p>Because the goal isn&#x27;t to become an agency where everyone can generate everything.</p>
+		<p>It&#x27;s to become an agency where more people can execute valuable work independently, without turning quality assurance into an archaeological investigation of everything the robots did.</p>
+		<h2 id="sources">Sources</h2>
+		<ul>
+		<li><a target="_blank" rel="noopener" href="https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/">PHP Foundation — October 21 PHP security release</a></li>
+		<li><a target="_blank" rel="noopener" href="https://wpengine.com/blog/php-vulnerability-update/">WP Engine — PHP vulnerability update</a></li>
+		<li><a target="_blank" rel="noopener" href="https://wpenginestatus.com/incidents/969801">WP Engine Status — PHP security incident</a></li>
+		<li><a target="_blank" rel="noopener" href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation">Anthropic — Donating Agent Skills to the Agentic AI Foundation</a></li>
+		<li><a target="_blank" rel="noopener" href="https://searchengineland.com/google-ads-expands-customer-acquisition-and-retention-controls-497820">Search Engine Land — Customer acquisition and retention controls</a></li>
+		<li><a target="_blank" rel="noopener" href="https://searchengineland.com/google-ads-adds-new-image-and-video-sourcing-options-to-performance-max-498204">Search Engine Land — Performance Max image and video sourcing</a></li>
+		<li><a target="_blank" rel="noopener" href="https://searchengineland.com/google-ads-expands-smart-bidding-exploration-to-performance-max-and-shopping-campaigns-498529">Search Engine Land — Smart Bidding Exploration expands to Shopping and Performance Max</a></li>
+		<li><a target="_blank" rel="noopener" href="https://support.google.com/google-ads/answer/18743168">Google Ads Help — Smart Bidding Exploration</a></li>
+		<li><a target="_blank" rel="noopener" href="https://www.semrush.com/blog/ai-overviews-commercial-modifiers-study/">Semrush — AI Overviews commercial modifiers study</a></li>
+		<li><a target="_blank" rel="noopener" href="https://searchengineland.com/google-ai-overviews-nearly-double-commercial-keywords-498078">Search Engine Land — AI Overviews on commercial keywords</a></li>
+		<li><a target="_blank" rel="noopener" href="https://searchengineland.com/chatgpt-sends-less-than-googles-traffic-497705">Search Engine Land — ChatGPT referrals compared with Google organic traffic</a></li>
+		<li><a target="_blank" rel="noopener" href="https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html">Google Workspace Updates — BigQuery analysis with Gemini in Sheets</a></li>
+		<li><a target="_blank" rel="noopener" href="https://workspaceupdates.googleblog.com/2026/10/adjust-video-clip-playback-speed-directly-in-Google-Vids.html">Google Workspace Updates — Vids playback speed controls</a></li>
+		<li><a target="_blank" rel="noopener" href="https://workspaceupdates.googleblog.com/2026/10/extract-audio-tracks-in-google-vids.html">Google Workspace Updates — Extract audio in Vids</a></li>
+		<li><a target="_blank" rel="noopener" href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552">Search Engine Land — ChatGPT referral tracking bug and recovery</a></li>
+		<li><a target="_blank" rel="noopener" href="https://workspaceupdates.googleblog.com/2026/10/create-structured-documents-using-just-your-voice-with-Docs-Live-in-Google-Docs-on-mobile.html">Google Workspace Updates — Docs Live on mobile</a></li>
+		</ul>
+
+		<div class="tag-row">
+			<span class="tag">AI Marketing</span>
+			<span class="tag">Paid Media</span>
+			<span class="tag">Agent Skills</span>
+			<span class="tag">WordPress Security</span>
+		</div>
+		<author-bio></author-bio>
+	</article>
+
+	<nav class="postnav">
+		<small>Previous update</small>
+		<a href="/blog/weekly-ai-marketing-web-update-october-19-2026/">Figma Connects Design to Code, Google Gives Advertisers More Control, and AI Search Gets a Link Makeover &rarr;</a>
+	</nav>
+
+	</main>
+
+	<site-footer></site-footer>
+</body>
+</html>

@@ -22,6 +22,8 @@ All crawlers are permitted to access the public site. This includes, but is not 
 
 ## Weekly AI Marketing & Web Updates
 
+- [October 26, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-october-26-2026/): Critical PHP security fixes, portable Agent Skills, Google Ads customer-value and creative controls, AI-search research, and native Workspace improvements.
+
 - [October 19, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-october-19-2026/): Figma code layers and Specs, Claude Code Review, Google Ads budget controls, AI-search links, first-party measurement, and ChatGPT referral attribution.
 
 - [October 12, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-october-12-2026/): Claude Motion and Dashboards, Figma’s design agent, Conversion Lift, visual ChatGPT ads, WordPress security, and search quality.
