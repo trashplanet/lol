@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#e91e63">
+	<title>WordPress Security, AI Crawling &amp; Ad Controls | Laura Ferruggia</title>
+	<meta name="description" content="November 2 AI marketing update: WordPress security, a compromised Claude Code extension, AI crawler controls, Microsoft Ads measurement, and Gemini editing.">
+	<link rel="canonical" href="https://www.laura.lol/blog/weekly-ai-marketing-web-update-november-2-2026/">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:site_name" content="Laura Ferruggia">
+	<meta property="og:title" content="WordPress Security Gets Serious, AI Crawling Controls Move Toward a Standard, and Advertising Automation Gets More Guardrails">
+	<meta property="og:description" content="WordPress security fixes, the Cursor extension incident, shared AI-training crawler controls, Microsoft Ads measurement, and Gemini document editing.">
+	<meta property="og:url" content="https://www.laura.lol/blog/weekly-ai-marketing-web-update-november-2-2026/">
+	<meta property="article:published_time" content="2026-11-02">
+	<meta property="article:author" content="Laura Ferruggia">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="WordPress Security Gets Serious, AI Crawling Controls Move Toward a Standard, and Advertising Automation Gets More Guardrails">
+	<meta name="twitter:description" content="WordPress security fixes, the Cursor extension incident, shared AI-training crawler controls, Microsoft Ads measurement, and Gemini document editing.">
+	<link rel="icon" href="/laurel-icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/css/site.css?v=20260920-7">
+	<link rel="stylesheet" href="/css/blog.css?v=20260920-9">
+	<script src="/js/site.js?v=20260920-7" defer></script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BlogPosting",
+		"headline": "WordPress Security Gets Serious, AI Crawling Controls Move Toward a Standard, and Advertising Automation Gets More Guardrails",
+		"description": "November 2 AI marketing update: WordPress security, a compromised Claude Code extension, AI crawler controls, Microsoft Ads measurement, and Gemini editing.",
+		"datePublished": "2026-11-02",
+		"dateModified": "2026-11-02",
+		"author": { "@type": "Person", "@id": "https://www.laura.lol/#laura-ferruggia", "name": "Laura Ferruggia", "url": "https://www.laura.lol/" },
+		"publisher": { "@type": "Person", "@id": "https://www.laura.lol/#laura-ferruggia", "name": "Laura Ferruggia", "url": "https://www.laura.lol/" },
+		"mainEntityOfPage": "https://www.laura.lol/blog/weekly-ai-marketing-web-update-november-2-2026/"
+	}
+	</script>
+</head>
+<body>
+	<site-header></site-header>
+
+	<section class="hero">
+		<div class="wrap">
+			<p class="eyebrow">Weekly AI Marketing &amp; Web Update</p>
+			<h1>WordPress Security Gets Serious, AI Crawling Controls Move Toward a Standard, and Advertising Automation Gets More Guardrails</h1>
+		</div>
+	</section>
+
+	<main>
+	<article class="post">
+		<a class="back" href="/blog/">&larr; All posts</a>
+		<p class="post-meta"><time datetime="2026-11-02">November 2, 2026</time> · 15 min read · by Laura Ferruggia</p>
+		<nav class="toc" aria-label="Table of contents">
+			<strong>Table of contents</strong>
+			<ol>
+				<li><a href="#wordpress-security-update">WordPress 7.1.4 fixes multiple security vulnerabilities, including a remote-code-execution risk during updates</a></li>
+				<li><a href="#cursor-extension-security">A malicious Claude Code extension was distributed through Cursor&#x27;s marketplace</a></li>
+				<li><a href="#ai-training-crawler-controls">Google and OpenAI back a shared robots.txt control for AI training</a></li>
+				<li><a href="#microsoft-advertising-controls">Microsoft Advertising expands Performance Max controls and makes its Conversions API generally available</a></li>
+				<li><a href="#gemini-document-editing">Gemini now creates, previews, and edits documents directly inside conversations</a></li>
+				<li><a href="#also-worth-knowing">Also worth knowing</a></li>
+				<li><a href="#what-we-should-do">What we should actually do this week</a></li>
+				<li><a href="#the-bigger-pattern">The bigger pattern</a></li>
+				<li><a href="#sources">Sources</a></li>
+			</ol>
+		</nav>
+
+		<p class="lead">This week is a reminder that AI-powered operations aren&#x27;t just about what the tools can produce. They&#x27;re also about the systems that make that work secure, controllable, and measurable.</p>
+		<p>WordPress released another security update, including a vulnerability in its own upgrade process. A compromised Claude Code extension exposed the risks of trusting software distribution channels. Google and OpenAI announced support for a shared AI-training preference standard, while Microsoft introduced new campaign controls and server-side measurement capabilities.</p>
+		<p>Meanwhile, Gemini is making it easier to create and edit actual documents without the usual parade of downloads, exports, and formatting casualties.</p>
+		<p>The common thread is simple: <strong>the next competitive advantage isn&#x27;t generating more work. It&#x27;s building better systems around the work being generated.</strong></p>
+		<h2 id="wordpress-security-update">1. WordPress 7.1.4 fixes multiple security vulnerabilities, including a remote-code-execution risk during updates</h2>
+		<p><strong>October 28 | Security release — update immediately</strong></p>
+		<p>WordPress released version 7.1.4 on October 28, addressing a substantial collection of security vulnerabilities.</p>
+		<p>Security company Patchstack identifies <strong>22 vulnerabilities across 17 advisories</strong>, including stored cross-site scripting, permission problems, and issues involving WordPress blocks and the Interactivity API.</p>
+		<p>The most unusual vulnerability involves the WordPress upgrade process itself.</p>
+		<p>Under specific conditions, an attacker could potentially exploit a race condition while WordPress is updating to achieve remote code execution.</p>
+		<p>The attack requires hitting a very short window during the update process, making exploitation difficult. But the vulnerability does not require an authenticated account.</p>
+		<p>Other fixes address stored XSS involving specially crafted block markup, the Categories, Image, Playlist, and Comments Pagination blocks, as well as multiple Interactivity API issues.</p>
+		<p>There are also fixes for unpublished Customizer changesets potentially being discoverable by unauthenticated visitors and improper access to editorial Notes.</p>
+		<p>Security patches have been backported to eligible older WordPress branches, although WordPress continues to recommend using the latest version.</p>
+		<h3>Why it matters</h3>
+		<p>This is particularly relevant for agencies maintaining self-hosted WordPress websites with custom themes, ACF components, and Gutenberg-based functionality.</p>
+		<p>Several vulnerabilities affect ordinary WordPress features rather than obscure plugins.</p>
+		<p>The Interactivity API issues are also noteworthy because WordPress is increasingly using this architecture to support interactive frontend components.</p>
+		<p>As developers adopt newer WordPress APIs, security review needs to evolve alongside them.</p>
+		<p>And the upgrade-process vulnerability introduces an especially annoying possibility: a security issue that exists during the process intended to keep the website secure.</p>
+		<p>Technology has a wonderful sense of humor.</p>
+		<h3>What to do</h3>
+		<p>Confirm that all maintained WordPress installations have received 7.1.4 or the appropriate security backport.</p>
+		<p>Check installations where automatic updates are disabled, hosting providers pin versions, or deployments are managed through Git or custom pipelines.</p>
+		<p>For environments where server configuration is under your control, review Patchstack&#x27;s recommendation to deny public web access to the <code>wp-content/upgrade/</code> directory.</p>
+		<p>After patching, regression-test critical functionality, especially custom blocks, ACF-driven templates, interactive components, forms, and frontend JavaScript.</p>
+		<p>This is a separate development from last week&#x27;s critical PHP vulnerabilities. <strong>Both the PHP environment and WordPress core need to be patched independently.</strong></p>
+		<h2 id="cursor-extension-security">2. A malicious Claude Code extension was distributed through Cursor&#x27;s marketplace</h2>
+		<p><strong>October 29–30 | Security incident — targeted action required</strong></p>
+		<p>This is the week&#x27;s most important AI-development security story.</p>
+		<p>On October 29, a maliciously modified version of Anthropic&#x27;s Claude Code extension appeared in the Cursor extension marketplace.</p>
+		<p>The affected packages were versions <strong>2.1.312 and 2.1.313</strong> for macOS and Windows, distributed through Cursor&#x27;s marketplace during an approximately 11-hour window.</p>
+		<p>The extension was published under the legitimate Claude Code extension identity, making it appear to be a normal software update.</p>
+		<p>Cursor estimates that at most 5,000 users were potentially affected.</p>
+		<p>The malicious code attempted to install a persistent SSH backdoor, add an attacker-controlled SSH key, establish a remote connection, and collect information about the affected machine.</p>
+		<p>Errors in the malicious code prevented some of the more dangerous functionality from working on most systems. However, Cursor warns that unauthorized keys and persistence mechanisms may remain even after the extension is uninstalled.</p>
+		<p><strong>Anthropic did not create or distribute the malicious package.</strong> Its official distribution channels were not affected, and the incident was limited to the compromised packages distributed through Cursor&#x27;s marketplace.</p>
+		<p>Cursor removed the affected versions, temporarily shut down its marketplace, rebuilt the service, and published remediation instructions.</p>
+		<h3>Why it matters</h3>
+		<p>This is a supply-chain attack against a development tool.</p>
+		<p>The threat wasn&#x27;t that Claude generated insecure code. The threat was that an apparently legitimate extension update could execute malicious code on a developer&#x27;s computer.</p>
+		<p>That distinction is important.</p>
+		<p>Development machines often have access to source repositories, deployment credentials, hosting accounts, API keys, and other sensitive systems.</p>
+		<p>Compromising one developer workstation can potentially provide access to considerably more than that individual&#x27;s projects.</p>
+		<p>As teams adopt coding agents, plugins, MCP servers, and reusable skills, the number of third-party components with meaningful system access is increasing.</p>
+		<h3>What to do</h3>
+		<p>Determine whether anyone uses Cursor with the Claude Code extension.</p>
+		<p>If so, identify whether the affected extension versions were installed or updated through Cursor&#x27;s marketplace during the October 29 exposure window.</p>
+		<p>Affected systems should follow Cursor&#x27;s published investigation and remediation process. Simply uninstalling the extension is insufficient.</p>
+		<p>For unaffected teams using Claude Code through the official VS Code marketplace, Open VSX, or npm distribution, this incident does not establish that their installations were compromised.</p>
+		<p>The broader operational lesson is worth applying anyway: review extension sources, automatic-update policies, and the permissions granted to development tools.</p>
+		<p>This isn&#x27;t a reason to stop using coding agents.</p>
+		<p>It&#x27;s a reason to stop treating development extensions as harmless little productivity accessories.</p>
+		<h2 id="ai-training-crawler-controls">3. Google and OpenAI back a shared robots.txt control for AI training</h2>
+		<p><strong>October 30 | Announced standard — implementation still forthcoming</strong></p>
+		<p>This is the week&#x27;s most significant SEO and web-governance announcement.</p>
+		<p>Google and OpenAI announced support for a shared mechanism that will allow website owners to express preferences about AI training through a common signal in <code>robots.txt</code>.</p>
+		<p>The proposal comes from work underway through the Internet Engineering Task Force&#x27;s AI Preferences working group.</p>
+		<p>Currently, website operators may need to maintain separate crawler instructions for different AI providers.</p>
+		<p>Google offers Google-Extended, while OpenAI maintains separate controls for its crawlers.</p>
+		<p>The proposed approach introduces a shared policy token that participating AI companies can recognize.</p>
+		<p>That would allow website owners to communicate a broader preference without configuring every provider individually.</p>
+		<p>Google says it plans to support the new control in 2027.</p>
+		<p>OpenAI says it expects to implement support in the coming months.</p>
+		<p>Existing provider-specific controls will continue to function.</p>
+		<h3>Why it matters</h3>
+		<p>For publishers, content-heavy websites, and agencies managing multiple properties, this could simplify an increasingly complicated part of website administration.</p>
+		<p>But there&#x27;s a critical distinction:</p>
+		<p><strong>AI training access, AI-powered search visibility, and conventional search indexing are not interchangeable.</strong></p>
+		<p>Blocking a crawler used for model training does not necessarily have the same consequences as blocking a crawler used to discover or retrieve content for search.</p>
+		<p>Google&#x27;s announcement also notes that websites explicitly allowing Google-Extended remain eligible for grounding in Gemini Apps, where content may be referenced and linked.</p>
+		<p>That means an AI-training preference can have consequences beyond the simple question of whether content is included in future model training.</p>
+		<p>For commercial websites, the decision should be strategic.</p>
+		<p>A publisher concerned about content licensing may have different priorities from a business trying to maximize discovery through AI assistants.</p>
+		<h3>What to try</h3>
+		<p>Audit existing <code>robots.txt</code> configurations across representative websites.</p>
+		<p>Document any current instructions for Google-Extended, GPTBot, OAI-SearchBot, and other relevant crawlers.</p>
+		<p>Identify whether those rules reflect deliberate business decisions or were added by a plugin, security service, or previous developer.</p>
+		<p>Do not immediately deploy the proposed shared token as though every provider already supports it.</p>
+		<p>Instead, monitor implementation timelines and evaluate how the new control will interact with existing crawler rules.</p>
+		<h3>Agency implication</h3>
+		<p>This creates an opportunity for a more sophisticated <strong>AI crawler and search-visibility audit</strong>.</p>
+		<p>Agencies can help clients understand the difference between allowing AI training, permitting AI-assisted retrieval, and maintaining visibility in traditional search.</p>
+		<p>That&#x27;s a more credible service than promising that one mysterious robots.txt directive will either guarantee or prevent AI visibility.</p>
+		<h2 id="microsoft-advertising-controls">4. Microsoft Advertising expands Performance Max controls and makes its Conversions API generally available</h2>
+		<p><strong>October 28 | Mix of generally available features, open pilots, and upcoming rollouts</strong></p>
+		<p>Microsoft&#x27;s October advertising update includes several developments worth evaluating, especially for agencies managing ecommerce or lead-generation accounts.</p>
+		<p>The most consequential is the <strong>general availability of Microsoft Advertising&#x27;s Conversions API</strong>.</p>
+		<p>The platform also announced expanded Performance Max reporting and targeting, new AI-generated advertising controls, and an assisted campaign-creation workflow.</p>
+		<h3>Conversions API becomes generally available</h3>
+		<p>Microsoft&#x27;s Conversions API allows advertisers to send conversion data directly from websites, applications, CRM platforms, and point-of-sale systems through server-to-server connections.</p>
+		<p>It works alongside the existing Universal Event Tracking tag.</p>
+		<p>The goal is to improve measurement completeness and provide stronger signals to automated bidding systems.</p>
+		<p>Microsoft supports direct integrations, Google Tag Manager, and technology partners including Segment, Tealium, Stape, and others.</p>
+		<p>This is particularly relevant for businesses where the most valuable conversion happens after the initial website interaction.</p>
+		<p>For example, a B2B advertiser might want Microsoft Ads to optimize toward qualified opportunities rather than every form submission.</p>
+		<h3>Performance Max gets more reporting and targeting controls</h3>
+		<p>Microsoft also expanded its Performance Max capabilities.</p>
+		<p>Age and gender targeting are now generally available.</p>
+		<p>Device targeting is rolling out over the coming weeks.</p>
+		<p>Search term reporting and auction insights are now available, while search-term landing-page reporting is scheduled to begin rolling out in mid-November.</p>
+		<p>Audience exclusions are in open pilot.</p>
+		<p>These changes address one of the recurring frustrations with automated advertising: limited visibility into what the platform is doing.</p>
+		<h3>Messaging guidelines help constrain AI-generated ad copy</h3>
+		<p>Microsoft introduced messaging guidelines in open pilot for Performance Max and Search campaigns with AI Max enabled.</p>
+		<p>Advertisers can provide up to 40 guidelines governing preferred language, prohibited claims, brand tone, and messaging themes.</p>
+		<p>This could be particularly valuable for advertisers with strict brand requirements or complex product claims.</p>
+		<h3>Why it matters</h3>
+		<p>The real opportunity here isn&#x27;t that Microsoft can now create a Performance Max campaign with AI.</p>
+		<p>That&#x27;s convenient, but convenience alone doesn&#x27;t improve advertising performance.</p>
+		<p>The more important changes involve <strong>conversion quality, visibility, and control</strong>.</p>
+		<p>Server-side conversion data can help advertisers supply more complete business signals.</p>
+		<p>Additional reporting makes it easier to understand where campaigns are appearing.</p>
+		<p>Messaging guidelines can reduce the risk of AI-generated advertising that violates brand standards.</p>
+		<p>Together, these changes make automation more manageable.</p>
+		<h3>What to try</h3>
+		<p>Identify one Microsoft Advertising account where conversion measurement could be improved through CRM or server-side data.</p>
+		<p>Evaluate whether Conversions API can help distinguish valuable business outcomes from low-quality leads.</p>
+		<p>For Performance Max accounts, review the newly available reporting and targeting controls.</p>
+		<p>If messaging guidelines are accessible, test them against existing brand requirements and review the generated copy before publication.</p>
+		<h3>Agency implication</h3>
+		<p>Microsoft&#x27;s changes strengthen the case for integrating paid-media management with CRM data, measurement infrastructure, and creative governance.</p>
+		<p>As platforms automate more campaign execution, agencies can differentiate themselves through better inputs, better constraints, and better interpretation of the results.</p>
+		<h2 id="gemini-document-editing">5. Gemini now creates, previews, and edits documents directly inside conversations</h2>
+		<p><strong>October 29 | Available across supported Gemini app regions and languages</strong></p>
+		<p>Google introduced new document-creation and editing capabilities inside the Gemini app.</p>
+		<p>Users can now generate, preview, and revise documents, spreadsheets, presentations, PDFs, Markdown files, text files, and code without leaving the conversation.</p>
+		<p>Files can be expanded into a full-screen editor.</p>
+		<p>Users can make manual changes, highlight specific content, request revisions, and continue discussing the material with Gemini.</p>
+		<p>PDF previewing and editing are supported on both web and mobile.</p>
+		<p>Other file formats currently require the web interface.</p>
+		<p>Google says the capabilities are available to all users in supported Gemini app regions and languages.</p>
+		<h3>Why it matters</h3>
+		<p>This is another step toward eliminating the handoff between asking AI to create something and actually editing the resulting file.</p>
+		<p>For marketing teams, the obvious applications include campaign briefs, content outlines, reporting documents, presentation drafts, and structured project documentation.</p>
+		<p>The Markdown and code support are particularly interesting for teams using AI-assisted development workflows.</p>
+		<p>A content strategist could potentially review a Markdown-based brief or technical specification without needing to work inside a development editor.</p>
+		<p>A marketer could generate a draft presentation and refine it in the same conversation.</p>
+		<p>The improvement isn&#x27;t simply faster generation.</p>
+		<p>It&#x27;s fewer interruptions between drafting, reviewing, and revising.</p>
+		<h3>What to try</h3>
+		<p>Use a non-sensitive marketing document as a pilot.</p>
+		<p>Have Gemini create an initial brief, revise a selected section, reorganize its structure, and produce a second format.</p>
+		<p>Compare the process against existing document-production workflows.</p>
+		<p>Evaluate how well formatting survives revisions, how much manual cleanup is required, and whether the experience actually saves time.</p>
+		<p><strong>Compliance consideration:</strong> Gemini app capabilities should not automatically be assumed to fall under an organization&#x27;s existing Google Workspace BAA or approved-service configuration. Use only approved data and services. Do not introduce regulated information or enable additional integrations without the appropriate internal review.</p>
+		<h3>Agency implication</h3>
+		<p>This continues the shift toward <strong>document-native AI production</strong>.</p>
+		<p>Marketing employees can increasingly create and revise practical deliverables without moving repeatedly between chat interfaces and productivity applications.</p>
+		<p>The competitive advantage will come from standardized briefs, templates, review procedures, and content-quality expectations—not simply from having access to another file-generation button.</p>
+		<h2 id="also-worth-knowing">Also worth knowing</h2>
+		<h3>WordPress 7.2 is progressing toward its December release</h3>
+		<p>WordPress released 7.2 Beta 2 on October 27, with continued work on the Abilities API, DataViews, DataForm, REST API flexibility, and administration improvements.</p>
+		<p>The October 28 security release also confirmed that Beta 3 includes the applicable security fixes.</p>
+		<p>The Abilities API is especially interesting for future agentic WordPress workflows because it provides a structured way for WordPress functionality to be described and accessed.</p>
+		<p>For teams building custom themes and plugins, this is worth evaluating in a staging environment.</p>
+		<p><strong>WordPress 7.2 is not production-ready.</strong> The final release is currently scheduled for December 8.</p>
+		<h3>No major new Figma or Claude Design launch needs recycling</h3>
+		<p>Figma&#x27;s recent code layers, Specs, MCP integrations, and design-agent improvements remain worth testing.</p>
+		<p>But those announcements were already covered in October.</p>
+		<p>The same applies to Claude Design&#x27;s general availability and the earlier Claude Code Review launch.</p>
+		<p>The most consequential Claude-related development this week is the Cursor extension security incident, not another model or design-tool release.</p>
+		<p>There is no reason to manufacture a new feature announcement because a product appears on the editorial checklist.</p>
+		<h2 id="what-we-should-do">What we should actually do this week</h2>
+		<p>Ranked by urgency, operational impact, and practical value.</p>
+		<ol>
+		<li><strong>Verify WordPress 7.1.4 patch status.</strong> Audit maintained installations, confirm security backports where relevant, and test critical custom functionality. Also verify that last week&#x27;s PHP security fixes have been applied independently.</li>
+		<li><strong>Check whether any developers were exposed to the compromised Claude Code extension.</strong> This is specifically about affected versions distributed through Cursor&#x27;s marketplace on October 29. Follow Cursor&#x27;s remediation instructions for impacted systems.</li>
+		<li><strong>Review Microsoft Advertising conversion measurement.</strong> Identify an account that would benefit from Conversions API, particularly where CRM outcomes provide a better signal than raw form submissions.</li>
+		<li><strong>Audit AI crawler rules and document the business intent behind them.</strong> Review existing robots.txt directives and prepare for the proposed shared AI-training preference standard without assuming it is already supported everywhere.</li>
+		<li><strong>Evaluate Microsoft Performance Max reporting and messaging controls.</strong> Check new targeting, search-term reporting, auction insights, and the availability of messaging guidelines.</li>
+		<li><strong>Test Gemini&#x27;s in-chat document editing.</strong> Use an approved, non-sensitive marketing asset and measure whether the new workflow reduces document-production time and cleanup.</li>
+		<li><strong>Prepare a WordPress 7.2 staging test.</strong> Evaluate custom themes, ACF integrations, Gutenberg functionality, and any relevant Abilities API or administration changes ahead of the planned December release.</li>
+		</ol>
+		<h2 id="the-bigger-pattern">The bigger pattern</h2>
+		<p>This week&#x27;s developments illustrate something important about where AI-enabled marketing operations are heading.</p>
+		<p><strong>The tools are becoming easier to use, but the systems around them are becoming more consequential.</strong></p>
+		<p>Microsoft can automate campaign creation, but advertisers still need accurate conversion data and meaningful controls.</p>
+		<p>Gemini can produce editable documents, but teams still need consistent templates, editorial standards, and approved data-handling practices.</p>
+		<p>AI coding agents can accelerate development, but their extensions, dependencies, and distribution channels create security risks that traditional development governance still needs to address.</p>
+		<p>And as AI companies increasingly rely on web content, website operators need clearer ways to manage how that content is accessed and used.</p>
+		<p>For agencies, the long-term opportunity is not simply giving employees more AI tools.</p>
+		<p>It&#x27;s making expertise reusable.</p>
+		<p>A developer&#x27;s security knowledge should inform automated QA. A designer&#x27;s understanding of brand systems should guide generated creative. A paid-media specialist&#x27;s understanding of customer economics should determine which conversions the platform optimizes toward.</p>
+		<p>AI can extend what employees are capable of executing, but that only becomes a durable advantage when the organization builds processes that preserve quality, accountability, and measurable results.</p>
+		<p>The goal isn&#x27;t to have everyone producing everything at maximum speed.</p>
+		<p>It&#x27;s to make more employees capable of delivering useful work independently without requiring a specialist to spend the following afternoon cleaning up the wreckage.</p>
+		<p>Because producing work faster is wonderful.</p>
+		<p>Producing problems faster is just a more efficient way to ruin everyone&#x27;s week.</p>
+		<h2 id="sources">Sources</h2>
+		<ul>
+		<li><a target="_blank" rel="noopener" href="https://wordpress.org/news/2026/10/wordpress-7-1-4/">WordPress.org — WordPress 7.1.4 security release</a></li>
+		<li><a target="_blank" rel="noopener" href="https://www.patchstack.com/articles/wordpress-7-1-4-security-release/">Patchstack — WordPress 7.1.4 security advisories</a></li>
+		<li><a target="_blank" rel="noopener" href="https://cursor.com/blog/claude-code-extension-security-notice">Cursor — Claude Code extension security notice</a></li>
+		<li><a target="_blank" rel="noopener" href="https://www.sophos.com/en-us/blog/malicious-claude-code-extension-distributed-through-cursor-marketplace">Sophos — Malicious Claude Code extension in Cursor marketplace</a></li>
+		<li><a target="_blank" rel="noopener" href="https://developers.google.com/search/blog/2026/10/ai-training-control">Google Search Central — AI training control</a></li>
+		<li><a target="_blank" rel="noopener" href="https://openai.com/index/helping-websites-express-ai-training-preferences/">OpenAI — Helping websites express AI training preferences</a></li>
+		<li><a target="_blank" rel="noopener" href="https://about.ads.microsoft.com/en/blog/post/october-2026/build-steer-and-measure-your-campaigns-with-ai-whats-new-in-microsoft-advertising-this-october">Microsoft Advertising — October campaign controls and measurement updates</a></li>
+		<li><a target="_blank" rel="noopener" href="https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/">Google — Edit files directly in Gemini</a></li>
+		<li><a target="_blank" rel="noopener" href="https://wordpress.org/news/2026/10/wordpress-7-2-beta-2/">WordPress.org — WordPress 7.2 Beta 2</a></li>
+		</ul>
+
+		<div class="tag-row">
+			<span class="tag">AI Marketing</span>
+			<span class="tag">Paid Media</span>
+			<span class="tag">AI Crawlers</span>
+			<span class="tag">WordPress Security</span>
+		</div>
+		<author-bio></author-bio>
+	</article>
+
+	<nav class="postnav">
+		<small>Previous update</small>
+		<a href="/blog/weekly-ai-marketing-web-update-october-26-2026/">Critical WordPress Security Fixes, Portable AI Agent Skills, and a Reality Check on AI Search &rarr;</a>
+	</nav>
+
+	</main>
+
+	<site-footer></site-footer>
+</body>
+</html>
