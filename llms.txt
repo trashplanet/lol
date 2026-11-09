@@ -22,6 +22,8 @@ All crawlers are permitted to access the public site. This includes, but is not 
 
 ## Weekly AI Marketing & Web Updates
 
+- [November 9, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-november-9-2026/): More controllable AI images and video, Gemini survey analysis, Reddit search ads, server-side tagging controls, and WordPress 7.2 testing.
+
 - [November 2, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-november-2-2026/): WordPress security fixes, the Cursor extension incident, shared AI-training crawler controls, Microsoft Ads measurement, and Gemini document editing.
 
 - [October 26, 2026](https://www.laura.lol/blog/weekly-ai-marketing-web-update-october-26-2026/): Critical PHP security fixes, portable Agent Skills, Google Ads customer-value and creative controls, AI-search research, and native Workspace improvements.
