@@ -113,6 +113,12 @@ section#hero a.button:hover {
 }
 site-hero#hero a.button { margin-top: 1.85rem; }
 
+@media (max-width: 640px) {
+	site-hero#hero { text-align: center; }
+	site-hero#hero h1,
+	site-hero#hero p { margin-inline: auto; }
+}
+
 /* hero - links page */
 section.hero-links{
 	/*padding-top: 77px;*/

@@ -64,7 +64,7 @@ site-hero::after {
 	width: min(640px, 58%);
 	aspect-ratio: 1 / 1;
 	background: url('/img/yellow-laurel-wreath.svg') center / contain no-repeat;
-	opacity: .13;
+	opacity: .17;
 	pointer-events: none;
 	z-index: 0;
 }
