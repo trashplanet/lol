@@ -20,6 +20,7 @@
 
 	--line: rgba(23, 20, 26, .12);
 	--grad: linear-gradient(118deg, #e91e63 0%, #af0039 62%, #7d0029 100%);
+	--hover-shadow: 0 18px 40px rgba(175, 0, 57, .16);
 
 	--wrap: 72.5rem;    /* shared content width (header, home rows, blog) */
 	--measure: 54rem;   /* readable article column */
@@ -41,6 +42,20 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
    copyright footer exactly and is also part of the hero gradient. */
 html { background: var(--magenta); }
 body { background: var(--magenta); }
+
+/* ---------- shared calls to action ---------- */
+.cta-gradient {
+	background: var(--crimson) var(--grad);
+	transition: box-shadow .18s ease;
+}
+.cta-gradient:hover {
+	background-image: linear-gradient(298deg, var(--magenta) 0%, var(--crimson) 62%, var(--crimson-deep) 100%);
+	box-shadow: var(--hover-shadow);
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+	.cta-scale { transition: box-shadow .18s ease, transform .18s ease; }
+	.cta-scale:hover { transform: scale(1.02); }
+}
 
 /* ---------- shared hero ---------- */
 site-hero {

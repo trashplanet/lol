@@ -113,6 +113,12 @@ section#hero a.button:hover {
 }
 site-hero#hero a.button { margin-top: 1.85rem; }
 
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+	site-hero#hero a.cta-scale {
+		transition: background .2s ease, border-color .2s ease, transform .18s ease;
+	}
+}
+
 @media (max-width: 640px) {
 	site-hero#hero { text-align: center; }
 	site-hero#hero::after {
