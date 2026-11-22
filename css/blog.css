@@ -125,6 +125,10 @@ main.archive::after {
 .archive-more:hover {
 	background-image: linear-gradient(298deg, var(--magenta) 0%, var(--crimson) 62%, var(--crimson-deep) 100%);
 }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+	.archive-more { transition: box-shadow .18s ease, transform .18s ease; }
+	.archive-more:hover { transform: scale(1.02); }
+}
 .archive-more span,
 .archive-filters button[aria-pressed="true"] span { background: #fff; color: var(--crimson); }
 .archive button:focus-visible { outline: 2px solid var(--crimson); outline-offset: 3px; }
