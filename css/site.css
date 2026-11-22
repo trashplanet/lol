@@ -46,14 +46,22 @@ body { background: var(--magenta); }
 /* ---------- shared calls to action ---------- */
 .cta-gradient {
 	background: var(--crimson) var(--grad);
-	transition: box-shadow .18s ease;
 }
 .cta-gradient:hover {
 	background-image: linear-gradient(298deg, var(--magenta) 0%, var(--crimson) 62%, var(--crimson-deep) 100%);
+}
+.cta-gradient,
+.cta-glow {
+	transition: background-color .25s ease-out, color .25s ease-out, box-shadow .18s ease;
+}
+.cta-gradient:hover,
+.cta-glow:hover {
 	box-shadow: var(--hover-shadow);
 }
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
-	.cta-scale { transition: box-shadow .18s ease, transform .18s ease; }
+	.cta-scale {
+		transition: background-color .25s ease-out, color .25s ease-out, box-shadow .18s ease, transform .18s ease;
+	}
 	.cta-scale:hover { transform: scale(1.02); }
 }
 

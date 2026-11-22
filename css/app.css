@@ -111,11 +111,17 @@ section#hero a.button:hover {
 	border-color: #ffffff;
 	color: #fefefe;
 }
-site-hero#hero a.button { margin-top: 1.85rem; }
+site-hero#hero a.button {
+	margin-top: 1.85rem;
+	transition: background .2s ease, border-color .2s ease, box-shadow .18s ease;
+}
+site-hero#hero a.button:hover {
+	box-shadow: 0 0 16px rgba(255, 255, 255, .2);
+}
 
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
 	site-hero#hero a.cta-scale {
-		transition: background .2s ease, border-color .2s ease, transform .18s ease;
+		transition: background .2s ease, border-color .2s ease, box-shadow .18s ease, transform .18s ease;
 	}
 }
 
