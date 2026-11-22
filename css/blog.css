@@ -89,7 +89,8 @@ main.archive::after {
 }
 .archive-count { margin: 0; font-weight: 600; color: var(--ink-soft); }
 .archive-filters button:hover { border-color: var(--crimson); }
-.archive-filters button[aria-pressed="true"] {
+.archive-filters button[aria-pressed="true"],
+.tag.category {
 	background: var(--crimson);
 	border-color: var(--crimson);
 	color: #fff;
