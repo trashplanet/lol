@@ -62,7 +62,9 @@ body { background: var(--magenta); }
 	.cta-scale {
 		transition: background-color .25s ease-out, color .25s ease-out, box-shadow .18s ease, transform .18s ease;
 	}
-	.cta-scale:hover { transform: scale(1.02); }
+	.site-foot .social-icons img { transition: filter .2s ease, transform .18s ease; }
+	.cta-scale:hover,
+	.site-foot .social-icons a:hover img { transform: scale(1.02); }
 }
 
 /* ---------- shared hero ---------- */
