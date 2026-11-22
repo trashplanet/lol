@@ -52,6 +52,7 @@ main::after {
 main.archive::after {
 	right: 50%;
 	transform: translateX(50%);
+	opacity: .35;
 }
 
 .archive { background: var(--paper-warm); }

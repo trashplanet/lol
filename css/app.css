@@ -182,6 +182,7 @@ section#certifications::before {
 	pointer-events: none;
 	z-index: 0;
 }
+section#certifications.publications::before { opacity: .35; }
 
 /*featured publications*/
 .featured-publications {
