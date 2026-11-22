@@ -167,6 +167,7 @@ section#services .services-text span {
 /* faint, oversized laurel watermark rising behind the publications section,
    peeking up from just behind the footer's social panel */
 section#certifications { position: relative; overflow: hidden; background: #fefefe; }
+section#certifications.publications { background: var(--paper-warm); }
 section#certifications .inner { position: relative; z-index: 1; }
 section#certifications::before {
 	content: "";

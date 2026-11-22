@@ -54,7 +54,7 @@ main.archive::after {
 	transform: translateX(50%);
 }
 
-.archive { background: #fcfaf3; }
+.archive { background: var(--paper-warm); }
 .archive > .wrap { padding-bottom: clamp(3rem, 7vw, 6rem); }
 .archive-toolbar {
 	display: flex;
