@@ -106,17 +106,22 @@ main.archive::after {
 	background: #f1ecdf;
 	color: var(--ink-soft);
 }
+.archive-filters button:not([data-filter="all"])[aria-pressed="false"] span {
+	background: color-mix(in srgb, var(--gold) 18%, transparent);
+}
 .archive-more {
 	display: flex;
 	width: fit-content;
 	max-width: 100%;
 	margin: clamp(1.75rem, 4vw, 3.5rem) auto 0;
 	padding: 1rem 1.4rem;
-	background: #d40c53;
+	background: var(--crimson);
 	color: #fff;
 	border: 0;
 }
-.archive-more:hover { background: var(--crimson); }
+.archive-filters button[aria-pressed="true"],
+.archive-more { background-image: var(--grad); }
+.archive-more:hover { background: var(--crimson-deep); }
 .archive-more span,
 .archive-filters button[aria-pressed="true"] span { background: #fff; color: var(--crimson); }
 .archive button:focus-visible { outline: 2px solid var(--crimson); outline-offset: 3px; }
