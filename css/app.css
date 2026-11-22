@@ -96,6 +96,7 @@ section#hero .hero-tagline { display: block; max-width: 46ch; margin: 0 auto; te
 	font-size: 1.75rem;
 }
 /* ghost button — hero CTA only; section CTAs stay solid */
+site-hero#hero a.button,
 section#hero a.button {
 	margin: 0;
 	background: transparent;
@@ -104,11 +105,14 @@ section#hero a.button {
 	padding: 1.618rem;
 	transition: background .2s ease, border-color .2s ease;
 }
+site-hero#hero a.button:hover,
 section#hero a.button:hover {
 	background: rgba(255,255,255,.14);
 	border-color: #ffffff;
 	color: #fefefe;
 }
+site-hero#hero a.button { margin-top: 1.85rem; }
+
 /* hero - links page */
 section.hero-links{
 	/*padding-top: 77px;*/

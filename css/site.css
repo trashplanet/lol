@@ -42,6 +42,62 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 html { background: var(--magenta); }
 body { background: var(--magenta); }
 
+/* ---------- shared hero ---------- */
+site-hero {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	background: var(--grad);
+	color: #fff;
+	padding-block: clamp(3.5rem, 9vw, 7rem) clamp(3rem, 7vw, 5.5rem);
+	padding-inline: max(2.4375rem, calc((100% - var(--wrap)) / 2 + .9375rem));
+	-webkit-font-smoothing: antialiased;
+}
+site-hero > * { position: relative; z-index: 1; }
+/* oversized laurel watermark bleeding off the right edge, behind the text */
+site-hero::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 8%;
+	transform: translateY(-50%);
+	width: min(640px, 58%);
+	aspect-ratio: 1 / 1;
+	background: url('/img/yellow-laurel-wreath.svg') center / contain no-repeat;
+	opacity: .13;
+	pointer-events: none;
+	z-index: 0;
+}
+site-hero h1 {
+	font-family: var(--font-display);
+	font-weight: 700;
+	line-height: 1.02;
+	letter-spacing: -.015em;
+	font-size: clamp(2.4rem, 6.5vw, 4.6rem);
+	margin: 0;
+	max-width: 20ch;
+}
+site-hero p { font-family: var(--font-body); font-weight: 300; line-height: 1.65; font-size: 1.35rem; max-width: 49ch; margin: 1.4rem 0 0; opacity: .95; }
+
+site-hero p.eyebrow {
+	font-family: var(--font-display);
+	text-transform: uppercase;
+	letter-spacing: .24em;
+	font-size: .98rem;
+	font-weight: 500;
+	opacity: .9;
+	margin: 0 0 1rem;
+}
+@media (max-width: 640px) {
+	site-hero::after {
+		top: auto;
+		right: 50%;
+		bottom: -22%;
+		width: min(620px, 135vw);
+		transform: translateX(50%);
+	}
+}
+
 /* ---------- global header ---------- */
 site-header {
 	display: block;

@@ -1,8 +1,18 @@
 /* =========================================================
-   site.js — global <site-header> and <site-footer>.
+   site.js — shared site components.
    Defined once, dropped onto any page with a single tag.
    Loaded with defer so page parsing is never blocked.
    ========================================================= */
+
+class SiteHero extends HTMLElement {
+	connectedCallback() {
+		if (this.querySelector(":scope > .hero-content")) return;
+		const content = document.createElement("div");
+		content.className = "hero-content";
+		content.append(...this.childNodes);
+		this.append(content);
+	}
+}
 
 class SiteHeader extends HTMLElement {
 	connectedCallback() {
@@ -62,6 +72,7 @@ class AuthorBio extends HTMLElement {
 	}
 }
 
+customElements.define("site-hero", SiteHero);
 customElements.define("site-header", SiteHeader);
 customElements.define("site-footer", SiteFooter);
 customElements.define("author-bio", AuthorBio);

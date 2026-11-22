@@ -27,49 +27,6 @@ a:hover { color: var(--magenta); }
    Foundation rows, so left/right page margins are consistent site-wide. */
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 0.9375rem; }
 
-/* ---------- hero (shared by archive + posts) ---------- */
-.hero {
-	position: relative;
-	overflow: hidden;
-	background: var(--grad);
-	color: #fff;
-	padding: clamp(3.5rem, 9vw, 7rem) 1.5rem clamp(3rem, 7vw, 5.5rem);
-}
-.hero > .wrap { position: relative; z-index: 1; padding: 0 0.9375rem; }
-/* oversized laurel watermark bleeding off the right edge, behind the text */
-.hero::after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	right: 8%;
-	transform: translateY(-50%);
-	width: min(640px, 58%);
-	aspect-ratio: 1 / 1;
-	background: url('/img/yellow-laurel-wreath.svg') center / contain no-repeat;
-	opacity: .13;
-	pointer-events: none;
-	z-index: 0;
-}
-.hero .eyebrow {
-	font-family: var(--font-display);
-	text-transform: uppercase;
-	letter-spacing: .24em;
-	font-size: .98rem;
-	font-weight: 500;
-	opacity: .9;
-	margin: 0 0 1rem;
-}
-.hero h1 {
-	font-family: var(--font-display);
-	font-weight: 700;
-	line-height: 1.02;
-	letter-spacing: -.015em;
-	font-size: clamp(2.4rem, 6.5vw, 4.6rem);
-	margin: 0;
-	max-width: 20ch;
-}
-.hero p { font-size: 1.2rem; max-width: 49ch; margin: 1.4rem 0 0; opacity: .95; }
-
 /* ---------- archive grid ---------- */
 main { position: relative; overflow: hidden; padding: 0 0 1rem; background: var(--paper); }
 main > .wrap {
@@ -321,13 +278,6 @@ author-bio { display: block; margin-top: 4rem; }
 	.author-card { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem; }
 	.author-card > img { width: 8rem; }
 	.author-card h2 { font-size: 1.65rem; }
-	.hero::after {
-		top: auto;
-		right: 50%;
-		bottom: -22%;
-		width: min(620px, 135vw);
-		transform: translateX(50%);
-	}
 	main::after {
 		right: 50%;
 		width: min(620px, 135vw);
