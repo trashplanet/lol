@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#e91e63">
+	<title>WordPress Security Fixes, Gemini Automation &amp; Demand Gen | Laura Ferruggia</title>
+	<meta name="description" content="November 23 update on WordPress 7.1.5 security fixes, Gemini in Apps Script and shared skills, Workspace Studio controls, and Demand Gen seasonality.">
+	<link rel="canonical" href="https://www.laura.lol/blog/weekly-ai-marketing-web-update-november-23-2026/">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:site_name" content="Laura Ferruggia">
+	<meta property="og:title" content="WordPress Security Fixes, Gemini Automation &amp; Demand Gen">
+	<meta property="og:description" content="WordPress 7.1.5 security fixes, Gemini in Apps Script, shareable skills, Workspace Studio controls, Demand Gen seasonality, and WordPress 7.2 testing.">
+	<meta property="og:url" content="https://www.laura.lol/blog/weekly-ai-marketing-web-update-november-23-2026/">
+	<meta property="article:published_time" content="2026-11-23">
+	<meta property="article:author" content="Laura Ferruggia">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="WordPress Security Fixes, Gemini Automation &amp; Demand Gen">
+	<meta name="twitter:description" content="WordPress 7.1.5 security fixes, Gemini in Apps Script, shareable skills, Workspace Studio controls, Demand Gen seasonality, and WordPress 7.2 testing.">
+	<link rel="icon" href="/laurel-icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/css/site.css?v=20261122-3">
+	<link rel="stylesheet" href="/css/blog.css?v=20261121-4">
+	<script src="/js/site.js?v=20261121" defer></script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BlogPosting",
+		"headline": "WordPress Security Fixes, Gemini Automation & Demand Gen",
+		"articleSection": "Weekly Update",
+		"description": "November 23 update on WordPress 7.1.5 security fixes, Gemini in Apps Script and shared skills, Workspace Studio controls, and Demand Gen seasonality.",
+		"datePublished": "2026-11-23",
+		"dateModified": "2026-11-23",
+		"author": { "@type": "Person", "@id": "https://www.laura.lol/#laura-ferruggia", "name": "Laura Ferruggia", "url": "https://www.laura.lol/" },
+		"publisher": { "@type": "Person", "@id": "https://www.laura.lol/#laura-ferruggia", "name": "Laura Ferruggia", "url": "https://www.laura.lol/" },
+		"mainEntityOfPage": "https://www.laura.lol/blog/weekly-ai-marketing-web-update-november-23-2026/"
+	}
+	</script>
+</head>
+<body>
+	<site-header></site-header>
+
+	<site-hero>
+		<p class="eyebrow">Weekly AI Marketing &amp; Web Update</p>
+		<h1>WordPress Security Fixes, Gemini Automation &amp; Demand Gen</h1>
+		<p>WordPress 7.1.5 security fixes, Gemini in Apps Script, shareable skills, Workspace Studio controls, Demand Gen seasonality, and WordPress 7.2 testing.</p>
+	</site-hero>
+
+	<main>
+	<article class="post">
+		<a class="back" href="/blog/">&larr; All posts</a>
+		<p class="post-meta"><time datetime="2026-11-23">November 23, 2026</time> · 12 min read · by Laura Ferruggia</p>
+		<nav class="toc" aria-label="Table of contents">
+			<strong>Table of contents</strong>
+			<ol>
+				<li><a href="#wordpress-security-update">WordPress 7.1.5 security update</a></li>
+				<li><a href="#gemini-apps-script">Gemini in Google Apps Script</a></li>
+				<li><a href="#shareable-gemini-skills">Shareable Gemini skills</a></li>
+				<li><a href="#demand-gen-seasonality">Demand Gen Seasonality Adjustments</a></li>
+				<li><a href="#workspace-studio-controls">Workspace Studio controls</a></li>
+				<li><a href="#wordpress-release-candidate">WordPress 7.2 release candidate</a></li>
+				<li><a href="#also-worth-knowing">Also worth knowing</a></li>
+				<li><a href="#what-we-should-do">What we should actually do this week</a></li>
+				<li><a href="#the-bigger-pattern">The bigger pattern</a></li>
+				<li><a href="#sources">Sources</a></li>
+			</ol>
+		</nav>
+
+		<p>Developments from November 16–22</p>
+		<p class="lead">This week delivered a particularly useful combination of developments: an urgent WordPress security update, a practical new way for marketers to build Google Workspace automations, more reusable AI skills, and an advertising feature that could improve performance during short promotions.</p>
+		<p>There&#x27;s also a meaningful change in how organizations can control what their automated workflows are allowed to do.</p>
+		<p>The common thread is <strong>moving AI from individual productivity experiments into repeatable, governed business processes</strong>.</p>
+		<p>And unlike another announcement about a chatbot becoming 7% better at answering obscure riddles, these changes have reasonably obvious applications for people who build websites, manage campaigns, and produce marketing work for a living.</p>
+		<h2 id="wordpress-security-update">1. WordPress 7.1.5 fixes serious security vulnerabilities, including a potential remote-code-execution path</h2>
+		<p>November 18 | Security release — immediate action recommended</p>
+		<p>WordPress released version 7.1.5, addressing multiple security vulnerabilities in WordPress core.</p>
+		<p>The fixes include an unauthenticated privilege-escalation vulnerability involving Template Part block attributes that could lead to remote code execution, SQL injection vulnerabilities, stored cross-site scripting, and unauthorized information disclosure through REST API endpoints.</p>
+		<p>Other fixes address multisite privilege escalation, the Interactivity API, XML-RPC, and Customizer functionality.</p>
+		<p>Two vulnerabilities were reported by Anthropic, providing another concrete example of AI-assisted security research contributing to open-source software maintenance.</p>
+		<h3>Why it matters</h3>
+		<p>This isn&#x27;t simply another plugin security advisory.</p>
+		<p>Several vulnerabilities affect core functionality used by ordinary self-hosted WordPress websites. A site can have a well-maintained custom theme, updated ACF fields, and no questionable plugins while still being exposed through an outdated core installation.</p>
+		<p>The Template Part issue is particularly concerning because of the potential severity of the resulting compromise.</p>
+		<h3>What to do</h3>
+		<p>Confirm that maintained WordPress websites have been updated to 7.1.5 or received an appropriate security backport.</p>
+		<p>Pay particular attention to installations with disabled automatic updates, custom deployment pipelines, or hosting environments that control core updates.</p>
+		<p>After updating, verify critical functionality, including custom templates, Gutenberg blocks, ACF components, REST integrations, and frontend interactions.</p>
+		<p>The security fixes have also been incorporated into WordPress 7.2&#x27;s release-candidate development.</p>
+		<h2 id="gemini-apps-script">2. Gemini in Google Apps Script becomes generally available, letting marketers build Workspace automations with natural language</h2>
+		<p>November 16 announcement | General availability; phased rollout</p>
+		<p>Google announced general availability of the Gemini side panel in Apps Script following an earlier public beta.</p>
+		<p>Users can describe an automation in ordinary language and have Gemini generate the corresponding script.</p>
+		<p>The feature supports creating new scripts, editing existing code, adding triggers, and diagnosing runtime errors. Suggested changes can be reviewed and accepted or rejected in individual blocks rather than applied blindly.</p>
+		<p>It&#x27;s accessible through the Apps Script editor, including from Google Sheets, Docs, and Slides. Availability covers eligible Business Standard, Business Plus, Enterprise Standard, Enterprise Plus, and certain AI add-on subscriptions.</p>
+		<h3>Why it matters</h3>
+		<p>This is one of the more immediately useful developments for marketing operations.</p>
+		<p>Consider the amount of repetitive work that happens inside Workspace: organizing spreadsheet data, generating formatted reports, moving information between documents, creating calendar events, and preparing recurring status updates.</p>
+		<p>Apps Script could already automate many of those tasks, but writing and maintaining JavaScript was a barrier for nondevelopers.</p>
+		<p>Gemini reduces that barrier while keeping the implementation inside Google&#x27;s existing scripting environment.</p>
+		<p>That doesn&#x27;t mean scripts are automatically safe or correct. They still execute with permissions, can modify data, and may interact with external services.</p>
+		<p>But it makes routine automation considerably more approachable.</p>
+		<h3>What to try</h3>
+		<p>Choose one repetitive reporting workflow, such as turning a structured Google Sheet into a formatted weekly Google Doc.</p>
+		<p>Have Gemini generate the script, review its proposed changes, and run it against test data.</p>
+		<p>Evaluate whether it produces the correct output, handles errors, and can be maintained without constant developer intervention.</p>
+		<p>Before enabling it with client information, verify OAuth permissions, external connections, and the organization&#x27;s approved Workspace configuration.</p>
+		<h3>Agency implication</h3>
+		<p>This could help content, SEO, paid-media, and account-management employees automate tasks that previously required development assistance.</p>
+		<p>The opportunity isn&#x27;t to turn everyone into a JavaScript engineer. It&#x27;s to make simple operational automation available to more employees while preserving technical oversight for complex or sensitive workflows.</p>
+		<h2 id="shareable-gemini-skills">3. Gemini skills become shareable and can reference live Google Drive documents</h2>
+		<p>November 16 announcement | Gradual rollout beginning November 12</p>
+		<p>Google expanded skills in the Gemini app with two particularly useful capabilities.</p>
+		<p>First, users can now share skills with colleagues, granting View or Edit access.</p>
+		<p>Second, skills can reference files from Google Drive, Gemini Notebook, and Google Photos, along with uploaded local files.</p>
+		<p>Drive files and notebooks remain connected to their current versions, meaning a skill can reference updated information without requiring users to repeatedly upload replacement documents.</p>
+		<p>Skills can be invoked directly or used automatically when relevant. Sharing and access management currently require the Gemini web app.</p>
+		<h3>Why it matters</h3>
+		<p>This is a meaningful development for teams trying to standardize how AI handles recurring assignments.</p>
+		<p>A content team could create a brand-voice skill referencing its current editorial guidelines.</p>
+		<p>An account manager could use a reporting skill grounded in an approved reporting template.</p>
+		<p>A design team could maintain a skill referencing visual standards and project documentation.</p>
+		<p>Unlike a prompt copied into a shared document, a centrally maintained skill can provide a more consistent starting point.</p>
+		<p>The live-document connection is especially useful because standards change.</p>
+		<p>There are also governance considerations. Skill sharing follows organizational Drive-sharing settings, and users need appropriate access to referenced Drive files.</p>
+		<h3>What to try</h3>
+		<p>Create one shared marketing-content skill grounded in an existing brand or editorial guidelines document.</p>
+		<p>Have two employees use it independently on comparable assignments.</p>
+		<p>Evaluate consistency, required editing, and whether updates to the source document are reflected appropriately.</p>
+		<p>Keep the initial pilot within approved Workspace information and permissions.</p>
+		<h3>Agency implication</h3>
+		<p>Reusable skills offer a practical way to encode specialist knowledge into workflows that more employees can execute.</p>
+		<p>For agencies, this could eventually become part of a standardized client onboarding and delivery system: approved voice, messaging, content structure, and review expectations available through reusable AI instructions.</p>
+		<h2 id="demand-gen-seasonality">4. Google adds Seasonality Adjustments to Demand Gen campaigns</h2>
+		<p>November 18 | Newly available in Demand Gen</p>
+		<p>Google announced support for <strong>Seasonality Adjustments in Demand Gen campaigns</strong> using Target CPA or Target ROAS bidding.</p>
+		<p>The feature allows advertisers to tell Google&#x27;s bidding systems when they expect a temporary increase in conversion rates, such as during a short promotion or limited-time sale.</p>
+		<p>The adjustment helps bidding respond to an anticipated conversion-rate change and then return to normal behavior after the promotional period.</p>
+		<p>Google also highlighted product feeds, creator partnerships, and shopping-oriented experiences within Demand Gen, but the new Seasonality Adjustments capability is the most directly actionable change in this announcement.</p>
+		<h3>Why it matters</h3>
+		<p>Automated bidding relies heavily on historical performance.</p>
+		<p>That can become a disadvantage during short promotions when customer behavior changes faster than the bidding system can infer from incoming data.</p>
+		<p>Seasonality Adjustments provide a way to communicate a known, temporary change in conversion likelihood.</p>
+		<p>This is particularly relevant to ecommerce advertisers running flash sales, limited-time offers, and other promotions with predictable conversion-rate effects.</p>
+		<p>However, the feature isn&#x27;t intended for every ordinary seasonal fluctuation. Smart Bidding already accounts for many recurring patterns.</p>
+		<h3>What to try</h3>
+		<p>Identify a Demand Gen campaign associated with a short promotion and using Target CPA or Target ROAS.</p>
+		<p>Evaluate whether there is a defensible expected conversion-rate increase based on historical promotional performance.</p>
+		<p>If so, test a Seasonality Adjustment and compare results against the campaign&#x27;s normal performance and business targets.</p>
+		<p>Don&#x27;t invent an aggressive adjustment merely because the sale needs to perform better.</p>
+		<h3>Agency implication</h3>
+		<p>This adds another useful control for paid-media teams managing promotional calendars.</p>
+		<p>It reinforces the importance of aligning campaign management with merchandising, pricing, and actual business expectations rather than allowing automated bidding to operate without context.</p>
+		<h2 id="workspace-studio-controls">5. Google Workspace Studio adds controls over what automated workflows can share and modify</h2>
+		<p>November 19–20 | Phased rollout and expanded data-region support</p>
+		<p>Google introduced a new administrative setting called <strong>Collaboration steps</strong> for Workspace Studio.</p>
+		<p>Administrators can now distinguish between automations that perform private actions for their creators and those that interact with other people or shared organizational resources.</p>
+		<p>For example, an administrator could allow employees to create drafts and personal notifications while restricting flows that send messages to colleagues or modify shared files.</p>
+		<p>The setting is enabled by default, preserving existing behavior unless administrators change it.</p>
+		<p>Google also announced general availability of Workspace Studio Data Regions support, allowing eligible organizations to apply regional storage and processing policies to supported workflow infrastructure.</p>
+		<p>Some integrations and generative AI capabilities become unavailable when nonregional processing is disabled.</p>
+		<h3>Why it matters</h3>
+		<p>As employees build more automations, the question changes from <em>Can this workflow run?</em> to <em>What is this workflow allowed to change?</em></p>
+		<p>An automation that formats a personal spreadsheet is very different from one that sends emails, updates shared documents, or modifies information used by an entire department.</p>
+		<p>These controls provide a more practical way to introduce automation without granting every workflow unrestricted collaborative capabilities.</p>
+		<p>The data-region changes are also important for organizations with stricter information-governance requirements, although feature eligibility and processing restrictions vary by plan.</p>
+		<h3>What to try</h3>
+		<p>Review whether Workspace Studio is enabled and which employees can create flows.</p>
+		<p>Identify workflows that communicate externally, modify shared resources, or handle sensitive information.</p>
+		<p>Determine whether Collaboration steps restrictions would be appropriate for particular organizational units or groups.</p>
+		<p>For organizations with regional-processing requirements, test the supported integrations before assuming every AI step will remain available under stricter settings.</p>
+		<h2 id="wordpress-release-candidate">6. WordPress 7.2 reaches release-candidate testing, with meaningful developer API refinements</h2>
+		<p>November 17 | Release candidate; final release planned December 8</p>
+		<p>WordPress 7.2 reached its first release candidate on November 17.</p>
+		<p>Unlike last week&#x27;s Beta 5 update, the release-candidate milestone signals that the project is entering its final stabilization period.</p>
+		<p>Recent fixes include improvements to the HTML and Interactivity APIs, script-module translations, plugin dependency messaging, client-side media uploads, and block-editor behavior.</p>
+		<p>The release also continues refining the Abilities API, which provides structured ways to expose WordPress functionality to other systems.</p>
+		<p>Other changes include responsive design controls, administration improvements, accessibility work, and updated bundled libraries.</p>
+		<p><strong>WordPress 7.2 is still pre-release software and should not be installed on production websites.</strong></p>
+		<h3>Why it matters</h3>
+		<p>For agencies moving toward custom WordPress themes and more agent-assisted development, the release-candidate stage is a useful opportunity to validate compatibility.</p>
+		<p>The Abilities API is particularly interesting for future automated WordPress operations because it offers a more structured interface for describing functionality.</p>
+		<p>But the immediate value is straightforward: identify breaking changes before the final release.</p>
+		<h3>What to try</h3>
+		<p>Test a representative custom-theme project against the release candidate in staging or WordPress Playground.</p>
+		<p>Focus on ACF integration, Gutenberg behavior, the Interactivity API, custom REST endpoints, responsive styling, and deployment workflows.</p>
+		<p>Document any regressions and update the project QA checklist before December 8.</p>
+		<h3>Agency implication</h3>
+		<p>Repeatable compatibility testing is increasingly valuable as development teams adopt coding agents and accelerate implementation.</p>
+		<p>The faster code gets produced, the more important it becomes to know whether that code continues working when the underlying platform changes.</p>
+		<h2 id="also-worth-knowing">Also worth knowing</h2>
+		<p><strong>Google Pics received Nano Banana 2.1 on November 16.</strong> The update improves image quality, edit fidelity, and text rendering across Google Pics and its integrations with Docs and Slides. This is worth a quick test for teams producing marketing graphics, especially when maintaining consistent elements across revisions. It&#x27;s an incremental upgrade rather than a new creative workflow.</p>
+		<p><strong>Google expanded programmatic inventory through Display &amp; Video 360.</strong> Its November 18 Marketing Platform update highlights Google Audiences on Spotify in the United States and India, as well as Pinterest video and display inventory accessible through DV360. Relevant for larger programmatic advertisers, but not necessarily a priority for teams focused primarily on Google Ads Search, Performance Max, or smaller paid-media budgets.</p>
+		<p><strong>Claude Code and Figma:</strong> I did not identify a sufficiently consequential new Claude Code, Claude Design, or Figma launch within this reporting window to justify repeating their recent announcements. The stronger immediate development story is applying reusable AI workflows to actual production and QA.</p>
+		<h2 id="what-we-should-do">What we should actually do this week</h2>
+		<ol>
+			<li><strong>Confirm WordPress 7.1.5 deployment across maintained sites.</strong> This is the highest-priority action because the release addresses core security vulnerabilities, including potentially severe unauthenticated attacks.</li>
+			<li><strong>Pilot Gemini in Apps Script on one recurring marketing operation.</strong> Choose a low-risk reporting or document-generation workflow and measure the time saved, correctness, and maintenance requirements.</li>
+			<li><strong>Create a shared Gemini skill based on approved editorial or brand guidelines.</strong> Test consistency across employees and verify access permissions for connected Drive files.</li>
+			<li><strong>Review Demand Gen campaigns with upcoming short promotions.</strong> Evaluate whether Seasonality Adjustments would help communicate legitimate conversion-rate changes to Smart Bidding.</li>
+			<li><strong>Audit Workspace Studio collaboration permissions.</strong> Determine whether employees&#x27; automations should be able to send messages or modify shared resources, and apply restrictions where appropriate.</li>
+			<li><strong>Run WordPress 7.2 release-candidate compatibility testing.</strong> Focus on custom themes, ACF, Gutenberg, REST functionality, and deployment workflows before the planned December release.</li>
+			<li><strong>Test Nano Banana 2.1 in Google Pics.</strong> Compare targeted edits, text accuracy, and visual consistency against the current creative-production process.</li>
+		</ol>
+		<h2 id="the-bigger-pattern">The bigger pattern</h2>
+		<p>This week&#x27;s developments reinforce an increasingly important distinction between <strong>using AI tools and building AI-enabled operations</strong>.</p>
+		<p>Google is making automation easier to create through Apps Script and easier to standardize through shared skills. At the same time, Workspace Studio is adding controls that determine how far those automations can reach.</p>
+		<p>Google Ads is providing more ways for advertisers to communicate business context to automated bidding systems.</p>
+		<p>And WordPress continues evolving both its development APIs and its security requirements, increasing the importance of reliable testing and maintenance processes.</p>
+		<p>The most valuable opportunity for marketing and web teams is to make expertise reusable.</p>
+		<p>A content strategist&#x27;s editorial standards can guide a shared skill. A developer&#x27;s knowledge of WordPress architecture can inform automated QA. A paid-media specialist&#x27;s understanding of promotional economics can shape bidding adjustments. An operations employee can automate routine reporting without needing to become a full-time programmer.</p>
+		<p>The advantage isn&#x27;t that AI allows everyone to do everything equally well.</p>
+		<p>It&#x27;s that more employees can execute useful work independently while specialist knowledge remains embedded in the process.</p>
+		<p>Because generating more work is easy.</p>
+		<p>Building an organization that can consistently deliver better work, with fewer bottlenecks and fewer expensive surprises, is where the real competitive advantage lives.</p>
+		<h2 id="sources">Sources</h2>
+		<ul>
+			<li><a target="_blank" rel="noopener" href="https://wordpress.org/news/2026/11/wordpress-7-1-5-release/">WordPress News — WordPress 7.1.5 security release</a></li>
+			<li><a target="_blank" rel="noopener" href="https://workspaceupdates.googleblog.com/2026/11/">Google Workspace Updates — November 2026 announcements</a></li>
+			<li><a target="_blank" rel="noopener" href="https://blog.google/products/ads-commerce/demand-gen-drop-november-2026/">Google Ads — November Demand Gen Drop</a></li>
+			<li><a target="_blank" rel="noopener" href="https://wordpress.org/news/2026/11/wordpress-7-2-release-candidate-1/">WordPress News — WordPress 7.2 Release Candidate 1</a></li>
+		</ul>
+
+		<div class="tag-row">
+			<span class="tag category">Weekly Update</span>
+			<span class="tag">AI Marketing</span>
+			<span class="tag">Paid Media</span>
+			<span class="tag">AI Development</span>
+			<span class="tag">Web Operations</span>
+		</div>
+		<author-bio></author-bio>
+	</article>
+
+	<nav class="postnav">
+		<small>Previous update</small>
+		<a href="/blog/weekly-ai-marketing-web-update-november-16-2026/">Claude Fable 5.2, Gemini 4 Hydrogen &amp; Clearer AI Max Tracking &rarr;</a>
+	</nav>
+
+	</main>
+
+	<site-footer></site-footer>
+</body>
+</html>
